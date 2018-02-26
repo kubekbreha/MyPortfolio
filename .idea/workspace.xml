@@ -2,307 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df614c9a-1fe9-4276-9b70-52be5c412d40" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/html/articles/keep_up.html" />
-      <change beforePath="$PROJECT_DIR$/Assets/css/social_icons.css" afterPath="$PROJECT_DIR$/Assets/css/social_icons.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/html/about.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/html/battleship.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/html/contact.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/html/supertester.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Assets/css/styles.css" afterPath="$PROJECT_DIR$/Assets/css/styles.css" />
+      <change beforePath="$PROJECT_DIR$/Assets/html/articles/daphne.html" afterPath="$PROJECT_DIR$/Assets/html/daphne.html" />
+      <change beforePath="$PROJECT_DIR$/Assets/html/articles/keep_up.html" afterPath="$PROJECT_DIR$/Assets/html/keep_up.html" />
       <change beforePath="$PROJECT_DIR$/Assets/html/articles_list.html" afterPath="$PROJECT_DIR$/Assets/html/articles_list.html" />
-      <change beforePath="$PROJECT_DIR$/Assets/html/daphne.html" afterPath="$PROJECT_DIR$/Assets/html/articles/daphne.html" />
+      <change beforePath="$PROJECT_DIR$/Assets/html/footer.html" afterPath="$PROJECT_DIR$/Assets/html/footer.html" />
       <change beforePath="$PROJECT_DIR$/Assets/html/home.html" afterPath="$PROJECT_DIR$/Assets/html/home.html" />
       <change beforePath="$PROJECT_DIR$/Assets/html/navigation.html" afterPath="$PROJECT_DIR$/Assets/html/navigation.html" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/-7BqiKPKUT4.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/-8QzPgYtCwq.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/-cBPVohqO3C.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/02YyfC2QdOH.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/0IwmIGMvvW6.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/0iwd65cpaHJ.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/0nlg36Y1xKS.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/0uxWhoQ2bKZ.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/1010611_10201324347886599_1680107160_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/1012318_579725148739107_1293595286_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/10354686_10150004552801856_220367501106153455_n(1).jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/10354686_10150004552801856_220367501106153455_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/1044357_1161740190526858_68408207351389981_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/10456028_1162485253779409_7742531482851135463_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/10580112_10204608376515302_6009591682364848295_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/10628525_938304559553799_6842905971402628460_n(1).jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/10628525_938304559553799_6842905971402628460_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/10822407_10203198333743291_1250673046_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/11220875_1744907389087849_849655274708188784_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/11891365_726141290823610_1062843466_n.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/11891366_10153694654823777_871403090_n.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/12219392_1057796404260598_8528279116210648937_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/12240098_1256504947708259_1068402071344464492_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/12279028_1176475662366763_6588420388027353753_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/13413767_10206991546126893_1758424558289014204_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/13686689_10210449252571404_7689111091666356965_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/1378822_910499338980157_8471741284064578088_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/1379841_10150004552801901_469209496895221757_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/14192774_10208414095042600_6278536235587779304_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/14333718_1094722320576605_1221374543310656565_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/14365540_180484242386565_647877825_n.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/14469576_111649859299561_5904081854807554004_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/14520529_1764465040458695_6697948011604862361_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/14680697_1474810762536095_4232862249168445188_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/15087714_926333890833656_196623199083954176_n.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/1521424_562691943819668_202176089_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/15284898_1146151255421931_8998376509220502040_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/15324494_1301856669877141_5464500746265296896_n.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/15676716_1360560580682452_8072883695645622272_n.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/15697482_10210459312911260_4813695607851897333_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/16195984_10206320056878738_2307443945562722290_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/16684928_513198088850772_748637736272920576_n.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/16686577_837353586404126_7156996934979289088_n.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/168981_181074711929469_1241063_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/16vMzF4-s_3.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/17190422_10208018613212848_1500518186422008385_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/17190783_1272452289510486_5853929956771264149_n(1).jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/17190783_1272452289510486_5853929956771264149_n(2).jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/17190783_1272452289510486_5853929956771264149_n(3).jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/17190783_1272452289510486_5853929956771264149_n(4).jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/17190783_1272452289510486_5853929956771264149_n(5).jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/17190783_1272452289510486_5853929956771264149_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/1743690_818078918207918_1791357596_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/18118454_1375635329170660_261070853755660170_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/18279743_424982861206471_8415379257005441024_n.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/18403252_1692974630718521_4428112880671055230_n(1).jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/18403252_1692974630718521_4428112880671055230_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/18620433_1461677210560915_3809113684953241521_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/18643780_1526923107349182_1129410999_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/1888713_776380235725310_92372692_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/19420702_1945792395446744_704105939551157939_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/19424229_1625981617436786_5999665390766226615_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/19437750_10213239921056259_5762095832558023075_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/1SZg_a1tWpS.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/1WBiyyKOb5N.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/1f448.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/1f449.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/1f600(1).png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/1f600.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/1f603.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/1f642.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/20156075_1607151662643096_2567483211310225981_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/20292794_1567401413334839_1682648140103159971_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/20292929_1863491207000005_7160189432660721099_n(1).jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/20292929_1863491207000005_7160189432660721099_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/20604215_1805147149512649_6925747112893491149_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/20638246_878368958994113_1615757034343633807_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/20708315_1399886596755158_3072612794279923146_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/20994207_1714591068552595_6189035820343963806_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/21152876_299858667088968_3499640104123629568_n.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/21728106_10212467675824545_7263797667450214699_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/22517273_527920314214652_2624878789187862528_n.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/22879606_10155680396590772_6277662308801970176_n.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/23083366_1500353096738818_6414117912331681792_n.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/23172931_1893908533958462_5839026251937227086_n(1).jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/23172931_1893908533958462_5839026251937227086_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/23204430_1271786952927110_5234584786063851520_n.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/23208340_10155193071441229_8381069069675134976_n.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/23380004_1734514869923337_597775364258666823_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/23517500_1905834939432762_4284632140552789372_n(1).jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/23517500_1905834939432762_4284632140552789372_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/23561303_1605496649506900_266244201476944941_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/23668618_300261217151704_2874024322995847168_n.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/24058682_1718754964815530_1987612402644864585_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/24232880_1819776764723732_7359462711753643335_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/24299441_141673493200710_8476823875185803264_n.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/24909941_1507110852676038_7066210375825232066_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/24991529_10211252860541907_1131848335965126146_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/25443192_1515600801868504_1364300480551786858_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/26036673_2078977032335504_4726933176528666624_n.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/26166134_1842816149082652_5595682202800106554_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/26169302_1736561923061371_8862159926663389338_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/26805121_1997066420542634_5911122685573814277_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/26814024_1652276961503996_4629386343158382592_n.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/26911785_1997406500525671_5947914528204259328_n.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/26993373_178852442882321_5483360858919666994_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/27043677_1908724179440072_2210700687514271744_n.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/27072896_1985411501486214_7344052512006445277_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/27336804_10204054484998150_3911314221815802506_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/27336866_1776969709000393_2870470943196633888_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/27337288_10216288065022240_4427603055236694941_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/27545261_1767896053249382_7246555746851677076_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/27545639_1412706175504483_6351995556766664589_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/27657477_1721696611186932_2789676661983949278_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/27699372_949171705239909_8015796025434308608_n.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/27750655_1989398591075101_5744700083273733197_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/27973538_111571366333580_4094241852279227169_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/28055899_1871952462839064_6743128191307415749_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/28129006_1757304617641588_975221407443058688_n.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/28167341_944914645674218_6275565567781080880_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/28168233_2080902715268343_2179936269550874684_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/28279178_2054440251512000_4592826504943294532_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/28279853_339806873206516_2469960056023640678_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/28378538_1723122837747036_4345180807779561742_n.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/2Hfsrn8zSCU.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/2KhkWtDpOK8.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/32ZW7SmviJY.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/3SrGFxU1EjW.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/3qDPqK0T5ax.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/442xz1NK3C-.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/4CrRanEBsuJ.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/4EjY_-CaQag.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/52nwHejvxEX.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/5Zg37dvnfu8.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/5du0HYDZ2Zd.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/6cOmET_qr-7.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/7PTkitdRZur.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/7UYwkitfK57.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/8-wyniqw-tu.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/81xfm_ZgaZu.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/851577_10151403722722055_418822655_n.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/8QmTp7DqFfb.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/90U8Bs8ga9B.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/9OtRS9qJjVX.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/9cvX3H1Nq5p.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/9iQXjwqZe66.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/9uw-i308FWW.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/A0N9shIPiEE.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/A6jHo5IbUko.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/AJ8xO-Tv372.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/AcEc8FgPv-R.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/Algh3R2pHZF.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/Ay0P3bvr0DS.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/BYrWV5WSJMH.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/BwPR9NvHX1T.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/DE4ciJQEzYQ.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/DqzyBlJ0wxh.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/E41yxnls0UV.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/Ej189zz1Img.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/F2c5w0E8jkr.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/F80dGJRXzz2.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/FJNhTHdzwtc.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/FWf21VkhNtq.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/FXARe9uX5Bj.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/FvvcGkBFi0F.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/Gema_RW-3hU.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/GlLQDW1a5y4.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/GsNJNwuI-UM.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/HCzvZSpuALh.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/H_FsnpiXOV4.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/I3Yq9q-9Og1.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/IdABnJERucU.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/ItHy4iBzGXs.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/JB2S4eQWFMp.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/JGG0wc_1RmP.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/JHV7b5rA1ow.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/JxRAOXVR3Vj.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/K7Ftt9NnNN5.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/KPy0aVky-29.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/KW84i8qUo5x.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/KstccJZ6y9o.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/L7REx7p6bSQ.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/LOOn0JtHNzb.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/Lns6E3RNmOq.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/LzlMkLzSPw0.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/MTZTg1D32uP.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/MTgrNZmo-79.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/MpJGSbatTp2.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/Ns_IGxB1yQ5.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/OIFDnzNuGMx.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/P8t6z6tmh-W.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/Q9W3OIbLtab.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/QD2s5VcZo2r.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/QEAdCp0US_m.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/QEafosez97d.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/QUAGT5Zzwd2.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/Qox70NNkpEG.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/Qq5NKqJ0JVN.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/RJL1bJ-v1D0.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/T55-DWLuYmR.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/T58RQ8oYyMT.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/TXauFShhSL2.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/TjDToexcmxU.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/U6KvYG6Ft05.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/Ug5WyWEfVBi.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/Wcgyvl_N-Xj.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/WmojV1rUmo7.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/WyncBvJuTI3.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/X9cet1UT2Mf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/XjEQDvSpkiI.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/Y291wCOC5ab.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/YOLLBvHZlP3.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/YUfvhVDu-0i.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/YZyVUa4ySC1.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/YdPxw2eDsmo.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/YlYpjX95p-T.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/ZswgwEBgijE.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/_Ntc3H1g_TL.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/_Vn6qUuXikk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/_ZcNgIhuaQ5.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/_vub1iWWgd2.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/ash8xOAZVK-.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/bJF8rI0o615.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/ba0lxGrjOjC.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/bnaJCLbMemn.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/bprqkghVRW9.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/c4nSVNlfQWS.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/cQgc8xb92Xy.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/cWdGf_cLl7M.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/cmbv2Mm8eLX.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/dE4yHKyg5Jr.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/dYjX4rLkI3q.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/dwU5EA7-3rS.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/ePkGuIJnG2n.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/efrxUPQv8x6.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/ei.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/ejdKYw12P4V.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/fPmoZFDHfot.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/fWw5xjNRMS6.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/f_iIFOCii-y.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/fr2o5xi4-Z-.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/gMSOe4JGZ2Q.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/hwmILcVYg--.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/iEy-GQRPyzr.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/iMv2OwtIG9w.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/if5AsY3AFPy.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/iu748u4C3uw.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/jH3PHfMFtxa.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/jKEcVPZFk-2.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/j_uR47IJzjN.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/jupvvm1ZKIU.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/kGni4gMdlGc.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/kV0G81SJyel.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/kpd8IJ5N67w.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/lvd3EhEtRVA.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/mNYvpc8hDVp.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/mociYTP4KyB.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/nHbe5IBrHsd.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/nU3KMcEXTkL.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/nn6FzoKTCha.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/oCIVWDzQBb-.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/oLPddPoGBHo.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/oNJZsJjfCAH.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/ok2YS1h6Mc_.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/ot3K3xOd13J.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/pS0qrm5qgSu.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/rBR_FMjUef2.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/rQiqXPsq3x0.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/rkV60Dpx6Dh.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/rzTcdW-bLAe.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/sCGuRKCYv-0.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/sRVwZ9wtBus.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/safe_image.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/scJAfpjNWns.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/tgzCtOQXHtj.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/thuBCnfP3YT.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/uKQlucTRueE.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/udGl_z79C9N.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/ukXEVv7yirU.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/ul9yMLbcRYJ.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/vlQYp3B6cb4.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/wFaz7EOlYLD.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/wW58NMJ2Uam.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/webp5xWjxhX.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/wvSbG-bSC7D.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/x0-H7v2aRl4.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/xti.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/xwnZJRgoSyH.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/yUP3h2xYFNA.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/y_22EiXOPJv.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/zkQKgZvFMie.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/zkaXLKFUrtk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/zmrOJA2rOoQ.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/img/profile_image_files/zqrOAU67Mof.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Assets/img/back.jpg" afterPath="$PROJECT_DIR$/Assets/img/back.jpg" />
+      <change beforePath="$PROJECT_DIR$/Assets/img/daphne/ruka.JPG" afterPath="$PROJECT_DIR$/Assets/img/daphne/ruka.JPG" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -316,71 +29,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/html/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="568">
-              <caret line="76" column="0" lean-forward="false" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="24" />
+            <state relative-caret-position="501">
+              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="daphne.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/html/articles/daphne.html">
+        <entry file="file://$PROJECT_DIR$/Assets/html/daphne.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="61" column="33" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="75" selection-end-column="7" />
+            <state relative-caret-position="396">
+              <caret line="28" column="11" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="articles_list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/html/articles_list.html">
+      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/html/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+            <state relative-caret-position="312">
+              <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="keep_up.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/html/articles/keep_up.html">
+      <file leaf-file-name="battleship.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/html/battleship.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="41" column="71" lean-forward="false" selection-start-line="41" selection-start-column="71" selection-end-line="41" selection-end-column="71" />
+            <state relative-caret-position="342">
+              <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="social_icons.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/css/social_icons.css">
+      <file leaf-file-name="keep_up.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/html/keep_up.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="170" column="29" lean-forward="false" selection-start-line="170" selection-start-column="29" selection-end-line="170" selection-end-column="29" />
+            <state relative-caret-position="342">
+              <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/js/scripts.js">
+      <file leaf-file-name="supertester.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/html/supertester.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="342">
+              <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/css/styles.css">
+      <file leaf-file-name="navigation.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/html/navigation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="594">
+              <caret line="33" column="31" lean-forward="false" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/html/about.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/html/footer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="42" column="43" lean-forward="false" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -409,8 +142,8 @@
       <find>about me</find>
       <find>red</find>
       <find>git</find>
-      <find>insta</find>
       <find>fon</find>
+      <find>insta</find>
       <find>se</find>
     </findStrings>
   </component>
@@ -428,15 +161,21 @@
         <option value="$PROJECT_DIR$/Assets/html/MainPage.html" />
         <option value="$PROJECT_DIR$/Assets/html/Article1.html" />
         <option value="$PROJECT_DIR$/Assets/js/scripts.js" />
-        <option value="$PROJECT_DIR$/Assets/html/footer.html" />
         <option value="$PROJECT_DIR$/Assets/html/articles.html" />
-        <option value="$PROJECT_DIR$/Assets/css/styles.css" />
-        <option value="$PROJECT_DIR$/Assets/html/daphne.html" />
-        <option value="$PROJECT_DIR$/Assets/html/home.html" />
-        <option value="$PROJECT_DIR$/Assets/html/navigation.html" />
         <option value="$PROJECT_DIR$/Assets/css/social_icons.css" />
-        <option value="$PROJECT_DIR$/Assets/html/articles_list.html" />
+        <option value="$PROJECT_DIR$/Assets/html/articles/daphne.html" />
         <option value="$PROJECT_DIR$/Assets/html/articles/keep_up.html" />
+        <option value="$PROJECT_DIR$/Assets/html/articles_list.html" />
+        <option value="$PROJECT_DIR$/Assets/html/daphne.html" />
+        <option value="$PROJECT_DIR$/Assets/css/styles.css" />
+        <option value="$PROJECT_DIR$/Assets/html/about.html" />
+        <option value="$PROJECT_DIR$/Assets/html/supertester.html" />
+        <option value="$PROJECT_DIR$/Assets/html/keep_up.html" />
+        <option value="$PROJECT_DIR$/Assets/html/battleship.html" />
+        <option value="$PROJECT_DIR$/Assets/html/contact.html" />
+        <option value="$PROJECT_DIR$/Assets/html/navigation.html" />
+        <option value="$PROJECT_DIR$/Assets/html/footer.html" />
+        <option value="$PROJECT_DIR$/Assets/html/home.html" />
       </list>
     </option>
   </component>
@@ -446,11 +185,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1723" />
-    <option name="y" value="27" />
-    <option name="width" value="1717" />
-    <option name="height" value="941" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -495,8 +232,7 @@
               <item name="MyPortfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyPortfolio" type="462c0819:PsiDirectoryNode" />
               <item name="Assets" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="articles" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MyPortfolio" type="b2602c69:ProjectViewProjectNode" />
@@ -521,8 +257,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Assets/html/articles" />
       <recent name="$PROJECT_DIR$/Assets/html" />
+      <recent name="$PROJECT_DIR$/Assets/html/articles" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -562,26 +298,26 @@
       <workItem from="1519598701910" duration="5881000" />
       <workItem from="1519626605418" duration="9509000" />
       <workItem from="1519639210544" duration="5052000" />
-      <workItem from="1519646327536" duration="18543000" />
+      <workItem from="1519646327536" duration="25696000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45903000" />
+    <option name="totallyTimeSpent" value="53056000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1680" y="27" width="1920" height="1053" extended-state="6" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10548523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39978448" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -746,50 +482,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/html/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/html/articles.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/html/navigation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="68" lean-forward="false" selection-start-line="22" selection-start-column="68" selection-end-line="22" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/css/social_icons.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="170" column="29" lean-forward="false" selection-start-line="170" selection-start-column="29" selection-end-line="170" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/html/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -802,26 +498,103 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/css/social_icons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="170" column="29" lean-forward="false" selection-start-line="170" selection-start-column="29" selection-end-line="170" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/html/articles_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        <state relative-caret-position="726">
+          <caret line="71" column="6" lean-forward="true" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/html/articles/daphne.html">
+    <entry file="file://$PROJECT_DIR$/Assets/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="61" column="33" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="75" selection-end-column="7" />
+        <state relative-caret-position="270">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/html/articles/keep_up.html">
+    <entry file="file://$PROJECT_DIR$/Assets/html/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="41" column="71" lean-forward="false" selection-start-line="41" selection-start-column="71" selection-end-line="41" selection-end-column="71" />
+        <state relative-caret-position="342">
+          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/html/supertester.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/html/keep_up.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/html/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/html/daphne.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="28" column="11" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/html/navigation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="31" lean-forward="false" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/html/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="42" column="43" lean-forward="false" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/html/battleship.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/img/back.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/html/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding />
         </state>
       </provider>
