@@ -1,3 +1,25 @@
-body{
-    background: chartreuse;
+body {
+    font-family: 'Slabo 27px', serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.logo {
+    padding-left: 16px;
+}
+
+.thin-text {
+    font-weight: 300;
+    background: rgba(96, 125, 139, .4);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.section-name {
+    padding-left: 16px;
 }
