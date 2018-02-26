@@ -14,5 +14,6 @@
     <orderEntry type="library" name="less" level="application" />
     <orderEntry type="library" name="bootstrap" level="application" />
     <orderEntry type="library" name="jquery-1.10.2" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
   </component>
 </module>

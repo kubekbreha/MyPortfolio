@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/social_icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+    <title>My portfolio</title>
+</head>
+
+<body>
+
+<!-- Navigation Section -->
+<div id="nav-placeholder">
+</div>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+    $.get("navigation.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+</script>
+
+
+<!-- Hero Section -->
+<div class="parallax-container valign-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col 18 s12 white-text ">
+                <span class="black-text text-lighten-2"><font
+                        size="60">Hi I'm Jakub Brehuv<span class="red-text">.</span>
+                    <br> Welcome to my Page<span class="red-text">.</span></font></span>
+            </div>
+            <!--<div class="col 18 s12">-->
+            <!--<img width="60" height="60" src="Assets/img/profile_image.jpg" alt="" class="circle responsive-img">-->
+            <!--</div>-->
+        </div>
+        <div class="row">
+            <div class="col 14">
+                <a class="waves-effect btn-large hoverable black accent-2">See my work</a>
+            </div>
+        </div>
+    </div>
+    <div class="parallax"><img src=""></div>
+</div>
+
+
+<!-- About Me Section -->
+<div class="container">
+    <div class="row">
+        <h2 class="section-name">About me<span class="red-text">.</span></h2>
+    </div>
+    <div class="row">
+        <p class="flow-text">
+            Teachers and students can use this page to check the difficulty of any text,
+            by showing its content in terms of the CEFR levels of words as described
+            in the English Vocabulary Profile (EVP), a free online resource.
+        </p>
+    </div>
+</div>
+
+<!-- Articles Section -->
+<div class="container">
+<h2 class="section-name">My work<span class="red-text">.</span></h2>
+</div>
+<div id="articles-list-placeholder">
+</div>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+    $.get("articles_list.html", function(data){
+        $("#articles-list-placeholder").replaceWith(data);
+    });
+</script>
+
+
+<!-- Footer Section -->
+<div id="footer-placeholder">
+</div>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+    $.get("footer.html", function(data){
+        $("#footer-placeholder").replaceWith(data);
+    });
+</script>
+
+
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="../js/scripts.js"></script>
+</body>
+
+</html>

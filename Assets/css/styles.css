@@ -5,6 +5,10 @@ body {
     flex-direction: column;
 }
 
+input.select-dropdown:focus {
+    text-indent: -9999999em;
+}
+
 p {
     font-family: 'Roboto Slab', serif;
 }
