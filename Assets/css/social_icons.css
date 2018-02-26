@@ -148,11 +148,11 @@ a.btn-social,
 }
 .btn-github
 {
-    background-color: #4183c4;
+    background-color: #424242 ;
 }
 .btn-github:hover
 {
-    background-color: #689cd0;
+    background-color: #616161;
 }
 .btn-google-plus
 {
@@ -164,11 +164,11 @@ a.btn-social,
 }
 .btn-instagram
 {
-    background-color: #3f729b;
+    background-color: #7e57c2;
 }
 .btn-instagram:hover
 {
-    background-color: #548cb9;
+    background-color: #9575cd;
 }
 .btn-jsfiddle
 {
