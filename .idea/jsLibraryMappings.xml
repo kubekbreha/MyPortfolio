@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{all, bootstrap, jquery-2.2.4, less, materialize}" />
+    <file url="PROJECT" libraries="{all, bootstrap, jquery-1.10.2, jquery-2.2.4, less, materialize}" />
   </component>
 </project>
