@@ -5,6 +5,13 @@ body {
     flex-direction: column;
 }
 
+::selection {
+    background: #f44336; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    background: #f44336; /* Gecko Browsers */
+}
+
 p {
     font-family: 'Roboto Slab', serif;
 }
@@ -34,4 +41,17 @@ main {
 
 .section-name {
     padding-left: 16px;
+}
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.header {
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
