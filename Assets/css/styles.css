@@ -8,6 +8,7 @@ body {
 ::selection {
     background: #f44336; /* WebKit/Blink Browsers */
 }
+
 ::-moz-selection {
     background: #f44336; /* Gecko Browsers */
 }
@@ -16,7 +17,7 @@ p {
     font-family: 'Roboto Slab', serif;
 }
 
-h1,h2,h3,h4,h5,h6,a {
+h1, h2, h3, h4, h5, h6, a {
     font-family: 'Roboto Slab', serif;
 }
 
@@ -55,3 +56,23 @@ main {
     margin-top: 60px;
     margin-bottom: 20px;
 }
+
+.image_size img {
+    height: 100%;
+    width: 75%;
+}
+
+.video_size video {
+    height: 100%;
+    width: 320px;
+}
+
+.image_size_screenshot img {
+    height: 100%;
+    width: 75%;
+}
+
+.article_name_font {
+    font-size: 42pt;
+}
+
