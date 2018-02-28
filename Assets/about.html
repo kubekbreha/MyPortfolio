@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale-1.0">
@@ -7,15 +8,16 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/social_icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/social_icons.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
-    <title>Articles</title>
-</head>
-<body>
 
+    <title>About</title>
+</head>
+
+<body>
 <!-- Navigation Section -->
 <div id="nav-placeholder">
 </div>
@@ -26,15 +28,14 @@
     });
 </script>
 
-<!-- Articles Section -->
-<div id="articles-list-placeholder">
-</div>
-<script src="//code.jquery.com/jquery.min.js"></script>
-<script>
-    $.get("articles_list.html", function (data) {
-        $("#articles-list-placeholder").replaceWith(data);
-    });
-</script>
+<!-- Snowman -->
+<svg width="600" height="602">
+    <circle cx="300" cy="450" r="150" stroke="blue" stroke-width="1" fill="blue" />
+    <circle cx="300" cy="200" r="100" stroke="blue" stroke-width="1" fill="blue" />
+    <circle cx="300" cy="50" r="50" stroke="blue" stroke-width="1" fill="blue" />
+</svg>
+
+
 
 
 <!-- Footer Section -->
@@ -49,7 +50,9 @@
 
 <!-- JavaScript -->
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-<script src="../js/scripts.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
