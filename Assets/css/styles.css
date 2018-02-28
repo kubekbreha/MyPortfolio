@@ -67,6 +67,12 @@ main {
     width: 320px;
 }
 
+.video_size_profile img {
+    height: 50%;
+    width: 50%;
+}
+
+
 .image_size_screenshot img {
     height: 100%;
     width: 75%;
@@ -75,4 +81,3 @@ main {
 .article_name_font {
     font-size: 42pt;
 }
-
