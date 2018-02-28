@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df614c9a-1fe9-4276-9b70-52be5c412d40" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,7 +29,7 @@
       <file leaf-file-name="daphne.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/daphne.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
+            <state relative-caret-position="1926">
               <caret line="107" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="164" selection-end-column="7" />
               <folding />
             </state>
@@ -59,7 +59,7 @@
       <file leaf-file-name="keep_up.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/keep_up.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
+            <state relative-caret-position="504">
               <caret line="28" column="9" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="141" selection-end-column="7" />
               <folding />
             </state>
@@ -79,7 +79,7 @@
       <file leaf-file-name="battleship.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/battleship.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
+            <state relative-caret-position="1242">
               <caret line="69" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="134" selection-end-column="7" />
               <folding />
             </state>
@@ -89,8 +89,8 @@
       <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="234">
+              <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -99,7 +99,7 @@
       <file leaf-file-name="supertester.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/supertester.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
+            <state relative-caret-position="1314">
               <caret line="73" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="103" selection-end-column="7" />
               <folding />
             </state>
@@ -190,8 +190,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1772" />
-    <option name="y" value="123" />
+    <option name="x" value="289" />
+    <option name="y" value="94" />
     <option name="width" value="1482" />
     <option name="height" value="777" />
   </component>
@@ -210,7 +210,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -226,7 +226,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,16 +286,16 @@
       <workItem from="1519646327536" duration="26258000" />
       <workItem from="1519712134078" duration="7601000" />
       <workItem from="1519730735950" duration="24672000" />
-      <workItem from="1519799743781" duration="8740000" />
+      <workItem from="1519799743781" duration="8781000" />
+      <workItem from="1519854586362" duration="731000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94631000" />
+    <option name="totallyTimeSpent" value="95403000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1772" y="123" width="1482" height="777" extended-state="0" />
-    <editor active="true" />
+    <frame x="289" y="94" width="1482" height="777" extended-state="0" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24142662" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -486,7 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -511,7 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="666">
           <caret line="37" column="1" lean-forward="false" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -535,7 +533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -559,7 +556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -573,7 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="170" column="29" lean-forward="false" selection-start-line="170" selection-start-column="29" selection-end-line="170" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -592,7 +587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
           <caret line="59" column="11" lean-forward="false" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -600,13 +594,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="24" column="15" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/battleship.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="1242">
           <caret line="69" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="134" selection-end-column="7" />
           <folding />
         </state>
@@ -622,7 +615,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/daphne.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
+        <state relative-caret-position="1926">
           <caret line="107" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="164" selection-end-column="7" />
           <folding />
         </state>
@@ -638,7 +631,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/keep_up.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
+        <state relative-caret-position="504">
           <caret line="28" column="9" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="141" selection-end-column="7" />
           <folding />
         </state>
@@ -654,7 +647,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/supertester.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
+        <state relative-caret-position="1314">
           <caret line="73" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="103" selection-end-column="7" />
           <folding />
         </state>
@@ -678,8 +671,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="234">
+          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
           <folding />
         </state>
       </provider>
