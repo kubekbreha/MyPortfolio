@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df614c9a-1fe9-4276-9b70-52be5c412d40" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/about.html" afterPath="$PROJECT_DIR$/about.html" />
-      <change beforePath="$PROJECT_DIR$/Assets/articles.html" afterPath="$PROJECT_DIR$/articles.html" />
-      <change beforePath="$PROJECT_DIR$/Assets/articles_list.html" afterPath="$PROJECT_DIR$/articles_list.html" />
-      <change beforePath="$PROJECT_DIR$/Assets/battleship.html" afterPath="$PROJECT_DIR$/battleship.html" />
-      <change beforePath="$PROJECT_DIR$/Assets/contact.html" afterPath="$PROJECT_DIR$/contact.html" />
-      <change beforePath="$PROJECT_DIR$/Assets/daphne.html" afterPath="$PROJECT_DIR$/daphne.html" />
-      <change beforePath="$PROJECT_DIR$/Assets/footer.html" afterPath="$PROJECT_DIR$/footer.html" />
-      <change beforePath="$PROJECT_DIR$/Assets/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/Assets/keep_up.html" afterPath="$PROJECT_DIR$/keep_up.html" />
-      <change beforePath="$PROJECT_DIR$/Assets/navigation.html" afterPath="$PROJECT_DIR$/navigation.html" />
-      <change beforePath="$PROJECT_DIR$/Assets/supertester.html" afterPath="$PROJECT_DIR$/supertester.html" />
+      <change beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/daphne.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
-              <caret line="107" column="18" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="164" selection-end-column="7" />
+              <caret line="107" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="164" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -60,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/articles_list.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="522">
-              <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+              <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -70,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/keep_up.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="366">
-              <caret line="28" column="9" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="141" selection-end-column="7" />
+              <caret line="28" column="9" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="141" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -99,8 +89,8 @@
       <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+            <state relative-caret-position="360">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -110,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/supertester.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="402">
-              <caret line="73" column="15" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="103" selection-end-column="7" />
+              <caret line="73" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="103" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -120,7 +110,7 @@
         <entry file="file://$PROJECT_DIR$/contact.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="17" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="82" selection-end-column="7" />
+              <caret line="17" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="82" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -199,11 +189,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1680" />
-    <option name="y" value="27" />
-    <option name="width" value="1920" />
-    <option name="height" value="1053" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1772" />
+    <option name="y" value="123" />
+    <option name="width" value="1482" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -296,18 +286,18 @@
       <workItem from="1519646327536" duration="26258000" />
       <workItem from="1519712134078" duration="7601000" />
       <workItem from="1519730735950" duration="24672000" />
-      <workItem from="1519799743781" duration="7532000" />
+      <workItem from="1519799743781" duration="8740000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93423000" />
+    <option name="totallyTimeSpent" value="94631000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1680" y="27" width="1920" height="1053" extended-state="6" />
+    <frame x="1772" y="123" width="1482" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18565401" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24142662" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -625,7 +615,7 @@
     <entry file="file://$PROJECT_DIR$/contact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="82" selection-end-column="7" />
+          <caret line="17" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="82" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -633,7 +623,7 @@
     <entry file="file://$PROJECT_DIR$/daphne.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
-          <caret line="107" column="18" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="164" selection-end-column="7" />
+          <caret line="107" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="164" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -649,7 +639,7 @@
     <entry file="file://$PROJECT_DIR$/keep_up.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="141" selection-end-column="7" />
+          <caret line="28" column="9" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="141" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -665,7 +655,7 @@
     <entry file="file://$PROJECT_DIR$/supertester.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
-          <caret line="73" column="15" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="103" selection-end-column="7" />
+          <caret line="73" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="103" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -681,15 +671,15 @@
     <entry file="file://$PROJECT_DIR$/articles_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
-          <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+        <state relative-caret-position="360">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
