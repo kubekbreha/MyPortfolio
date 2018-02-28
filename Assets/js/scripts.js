@@ -13,3 +13,7 @@ $("show_work").click(function() {
             scrollTop: $(".scroll_work").offset().top},
         'slow');
 });
+
+$(document).ready(function(){
+    $('.materialboxed').materialbox();
+});
