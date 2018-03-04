@@ -12,7 +12,6 @@ var pocetClankovNaStranu = 2;
 var server = "wt.kpi.fei.tuke.sk";
 
 
-
 //Výpis prvých článkov a vytvorenie navigačného panela
 forwardArticles2Html(-2, pocetClankovNaStranu, server, 'clanky', 'navigacia');
 
@@ -31,6 +30,7 @@ forwardArticles2Html(-2, pocetClankovNaStranu, server, 'clanky', 'navigacia');
 
 function navHtml(startIndex, articlesCount, articlesTotalCount) {
     var htmlKod = "";
+
     if (articlesCount > 0) {
         htmlKod += "Vypisujem články " + (startIndex + 1) + " až " + (startIndex + articlesCount) + " z " + articlesTotalCount;
 
@@ -58,7 +58,7 @@ function articlesHtml(articles) {
     var htmlKod = "";
     if (count = articles.articles.length) { //ak su nejake clanky
         for (var i = 0; i < count; i++)
-            htmlKod += "<p>" + articles.articles[i].author + ": " + articles.articles[i].title + " </p>";
+            htmlKod += "<p>" +  articles.articles[i].author + ": " + articles.articles[i].title + "(" + articles.articles[i].lastUpdated + ")" + " </p>";
     }
     return htmlKod;
 }
@@ -114,6 +114,8 @@ function getJSONAllBr(url, successHandler, errorHandler) {
             status = xhr.status;
             if (status === 200) { //uspesne vybavena poziadavka
                 data = JSON.parse(xhr.responseText);
+
+
                 successHandler && successHandler(data);
             } else {
                 errorHandler && errorHandler(status);
@@ -146,8 +148,9 @@ function forwardArticles2Html(startIndex, max, server, articlesElmId, navElmId) 
 }
 
 
+
 function backwardArticles2Html(startIndex, max, server, articlesElmId, navElmId) {
-    if(startIndex !== 0){
+    if (startIndex !== 0) {
         startIndex -= 2;
     }
     var restURL = "http://" + server + "/api/article/?max=" + max + "&offset=" + startIndex;
@@ -159,5 +162,4 @@ function backwardArticles2Html(startIndex, max, server, articlesElmId, navElmId)
         function (status) {
             errorDialog(status)
         });
-
 }
