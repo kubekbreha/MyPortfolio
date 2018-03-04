@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="Assets/css/styles.css">
+    <link rel="stylesheet" href="Assets/css/social_icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+    <title>Add Article</title>
+</head>
+
+<body>
+
+<!-- Navigation Section -->
+<div id="nav-placeholder">
+</div>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+    $.get("navigation.html", function (data) {
+        $("#nav-placeholder").replaceWith(data);
+    });
+</script>
+
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col 18 s12 white-text ">
+                <h3><span class="center black-text text-lighten-2 ">Add new article<span
+                        class="red-text">.</span></span></h3>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- Forms section -->
+<div class="container">
+    <form class="col ">
+
+
+        <div class="row">
+            <div class="input-field col l6 s12">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="input_name" type="text" class="validate">
+                <label for="input_name">Your name</label>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="input-field col l6 s12">
+                <i class="material-icons prefix">email_circle</i>
+                <input id="input_email" type="text" class="validate">
+                <label for="input_email">Your name</label>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="input-field col l6 s12">
+                <i class="material-icons prefix">date_range</i>
+                <input id="input_date" type="text" class="datepicker">
+                <label for="input_date">Date</label>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="input-field col l6 s12">
+                <i class="material-icons prefix">access_time</i>
+                <input id="input_time" type="text" class="timepicker">
+                <label for="input_time">Time</label>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="input-field col l6 s12">
+                <i class="material-icons prefix">title</i>
+                <input id="article_name" type="text" class="validate">
+                <label for="article_name">Aricle name</label>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea id="input_text" class="materialize-textarea"></textarea>
+                <label for="input_text">Text of article</label>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="file-field input-field col s12">
+                <i class="material-icons prefix">add</i>
+                <input type="file" multiple>
+                <input id="article_image" class="file-path validate" type="text" placeholder="Upload one or more files">
+                <label for="article_image">Article Images</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col  s12">
+                <i class="material-icons prefix">insert_link</i>
+                <input id="input_image_url" type="text" class="validate">
+                <label for="input_image_url">Image url</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12">
+                <div class="chips chips-placeholder"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12">
+                <a class="waves-effect waves-light btn-large">upload</a>
+                <a class="waves-effect waves-light btn-large right">reset</a>
+            </div>
+        </div>
+
+
+
+
+    </form>
+</div>
+
+
+<!-- Footer Section -->
+<div id="footer-placeholder">
+</div>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+    $.get("footer.html", function (data) {
+        $("#footer-placeholder").replaceWith(data);
+    });
+</script>
+
+
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="Assets/js/scripts.js"></script>
+</body>
+
+</html>
