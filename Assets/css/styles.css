@@ -5,6 +5,19 @@ body {
     flex-direction: column;
 }
 
+.force-mobile {
+    width: 750px;
+    max-width: 750px;
+    height: 1334px;
+    margin: 0 auto;
+    border-style: none;
+    border-color: inherit;
+    border-width: 0px;
+    -webkit-transform: scale(0.5);
+    -webkit-transform-origin: 0 0;
+    display: block;
+}
+
 ::selection {
     background: #f44336; /* WebKit/Blink Browsers */
 }
