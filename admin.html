@@ -22,7 +22,7 @@
 </div>
 <script src="//code.jquery.com/jquery.min.js"></script>
 <script>
-    $.get("navigation.html", function (data) {
+    $.get("admin_navigation.html", function (data) {
         $("#nav-placeholder").replaceWith(data);
     });
 </script>
@@ -93,8 +93,8 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">mode_edit</i>
-                <textarea id="input_text" class="materialize-textarea"></textarea>
-                <label for="input_text">Text of article</label>
+                <textarea id="article_text" class="materialize-textarea"></textarea>
+                <label for="article_text">Text of article</label>
             </div>
         </div>
 
@@ -124,8 +124,8 @@
 
         <div class="row">
             <div class="col s12">
-                <a class="waves-effect waves-light btn-large btn-large-admin hoverable">upload</a>
-                <a class="waves-effect waves-light btn-large btn-large-admin right hoverable">reset</a>
+                <a id="submit" onclick="submitClick()" class="waves-effect waves-light btn-large btn-large-admin hoverable">submit</a>
+                <a id="restart" class="waves-effect waves-light btn-large btn-large-admin right hoverable">reset</a>
             </div>
         </div>
 
@@ -136,21 +136,27 @@
 </div>
 
 
-<!-- Footer Section -->
-<div id="footer-placeholder">
-</div>
-<script src="//code.jquery.com/jquery.min.js"></script>
+<!-- Firebase JS -->
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
 <script>
-    $.get("footer.html", function (data) {
-        $("#footer-placeholder").replaceWith(data);
-    });
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAzZh0WLQgS2QSf5lD_RVkDW1MeKuX0Ty0",
+        authDomain: "myportfolio-1520234521619.firebaseapp.com",
+        databaseURL: "https://myportfolio-1520234521619.firebaseio.com",
+        projectId: "myportfolio-1520234521619",
+        storageBucket: "myportfolio-1520234521619.appspot.com",
+        messagingSenderId: "478569704717"
+    };
+    firebase.initializeApp(config);
 </script>
+<script src="Assets/js/firebase.js"></script>
 
 
 <!-- JavaScript -->
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-<script src="Assets/js/scripts.js"></script>
+<script src="Assets/js/visual_scripts.js"></script>
 </body>
 
 </html>
