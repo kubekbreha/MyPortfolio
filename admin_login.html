@@ -17,56 +17,61 @@
 
 <body>
 <div class="section"></div>
-<main>
-    <center>
+<main class="center">
+    <div class="z-depth-3 y-depth-3 x-depth-3 grey lighten-4 row"
+         style="display: inline-block; width: 50%;
+          padding: 20px 2% 0px 2%; border: 1px; margin-top: 100px; ">
+        <h1>LogIn<span class="green-text">.</span></h1>
         <div class="section"></div>
-        <h5 class="black-text">Please, login into your account</h5>
         <div class="section"></div>
 
-        <div class="container">
-            <div class="z-depth-1 grey lighten-4 row"
-                 style="display: inline-block; padding: 32px 88px 0px 88px; border: 1px solid #EEE;">
+        <p class="black-text" id="error_message"></p>
 
-                <form class="col s12 m12" method="post">
-
-                    <div class='row'>
-                        <div class='input-field col s12'>
-                            <input class='validate' type='email' name='email' id='email'/>
-                            <label for='email'>Enter your email</label>
-                        </div>
-                    </div>
-
-                    <div class='row'>
-                        <div class='input-field col s12'>
-                            <input class='validate' type='password' name='password' id='password'/>
-                            <label for='password'>Enter your password</label>
-                        </div>
-                        <label style='float: right;'>
-                            <a class='black-text' href='#!'><b>Forgot Password?</b></a>
-                        </label>
-                    </div>
-
-                    <br/>
-                    <center>
-                        <div class='row'>
-                            <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect black'>
-                                Login
-                            </button>
-                        </div>
-                    </center>
-                </form>
+        <div class="row">
+            <div class="input-field col s12">
+                <input class="validate" type="text" name="username" id="email_login" required/>
+                <label for="email_login">Email</label>
             </div>
         </div>
-        <a class='black-text' href="#!">Create account</a>
-    </center>
+        <div class="row">
+            <div class="input-field col m12">
+                <input class="validate" type="password" name="password" id="password_login" required/>
+                <label for="password_login">Password</label>
+            </div>
+            <label style="float: right;">
+                <b style="color: black;">Forgot Password?</b>
+            </label>
+        </div>
+        <br/>
+        <div class="row">
 
-    <div class="section"></div>
-    <div class="section"></div>
+            <a onclick="logIn()" class="black waves-effect waves-light btn">login</a>
+
+        </div>
+    </div>
 </main>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+<!-- Firebase JS -->
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAzZh0WLQgS2QSf5lD_RVkDW1MeKuX0Ty0",
+        authDomain: "myportfolio-1520234521619.firebaseapp.com",
+        databaseURL: "https://myportfolio-1520234521619.firebaseio.com",
+        projectId: "myportfolio-1520234521619",
+        storageBucket: "myportfolio-1520234521619.appspot.com",
+        messagingSenderId: "478569704717"
+    };
+    firebase.initializeApp(config);
+</script>
+
+
+<script src="Assets/js/firebase/firebase_login.js"></script>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 </body>
 
 

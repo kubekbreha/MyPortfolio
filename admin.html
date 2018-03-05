@@ -17,15 +17,33 @@
 
 <body>
 
-<!-- Navigation Section -->
-<div id="nav-placeholder">
+<div class="navbar-fixed">
+    <nav class="white">
+        <div class="nav-wrapper white">
+            <div class="container">
+                <a href="#!" class="brand-logo"><span
+                        class="logo black-text text-lighten-2">Admin</span><span
+                        class="green-text">.</span></a>
+            </div>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">
+                <span class="black-text text-lighten-2">menu</span></i>
+            </a>
+
+
+            <ul class="right hide-on-med-and-down ">
+                <li><a href="admin.html"><span class="black-text text-lighten-2">Add Project</span></a></li>
+                <li><a onclick="logout()"><span class="black-text text-lighten-2">Log Out</span></a></li>
+            </ul>
+        </div>
+    </nav>
 </div>
-<script src="//code.jquery.com/jquery.min.js"></script>
-<script>
-    $.get("admin_navigation.html", function (data) {
-        $("#nav-placeholder").replaceWith(data);
-    });
-</script>
+
+<div>
+    <ul class="side-nav" id="mobile-demo">
+        <li><a href="admin.html"><span class="black-text text-lighten-2">Add Project</span></a></li>
+        <li><a onclick="logout()" ><span class="black-text text-lighten-2">Log Out</span></a></li>
+    </ul>
+</div>
 
 
 <header>
@@ -33,7 +51,7 @@
         <div class="row">
             <div class="col 18 s12 white-text ">
                 <h3><span class="center black-text text-lighten-2 ">Add new article<span
-                        class="red-text">.</span></span></h3>
+                        class="green-text">.</span></span></h3>
             </div>
         </div>
     </div>
@@ -124,13 +142,10 @@
 
         <div class="row">
             <div class="col s12">
-                <a id="submit" onclick="submitClick()" class="waves-effect waves-light btn-large btn-large-admin hoverable">submit</a>
-                <a id="restart" class="waves-effect waves-light btn-large btn-large-admin right hoverable">reset</a>
+                <a id="submit" onclick="submitClick()" class="waves-effect waves-light btn-large btn-large-admin hoverable green">submit</a>
+                <a id="restart" class="waves-effect waves-light btn-large btn-large-admin right hoverable green">reset</a>
             </div>
         </div>
-
-
-
 
     </form>
 </div>
@@ -150,8 +165,8 @@
     };
     firebase.initializeApp(config);
 </script>
-<script src="Assets/js/firebase.js"></script>
-
+<script src="Assets/js/firebase/firebase_admin.js"></script>
+<script src="Assets/js/firebase/visual_admin_navigation.js"></script>
 
 <!-- JavaScript -->
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
