@@ -17,3 +17,8 @@ function logIn() {
         document.getElementById("error_message").innerHTML = errorMessage;
     });
 }
+
+
+function openRegister() {
+    window.location.href = "admin_register.html";
+}
