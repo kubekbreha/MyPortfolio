@@ -58,3 +58,8 @@ body {
     box-shadow: 0 1px 0 0 green !important
 }
 
+
+.social-margin{
+    margin-right: 20px;
+    margin-left: 20px;
+}
