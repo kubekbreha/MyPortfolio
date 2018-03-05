@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-signin-client_id" content="739447374919-iij0b3qqlnaa4eidj70m2k543n4j3675.apps.googleusercontent.com">
+    <title>Stránka s prihlásením</title>
+    <link rel="stylesheet" href="css/normalize.css" media="screen" />
+    <link rel="stylesheet"
+          href="css/blogStyleBasic.css"
+          media="screen" />
+
+</head>
+<body>
+
+<aside id="googleSignIn">
+    <div id="SignInButton"></div>
+    <div id="SignedIn">
+        Ste prihlásený ako <span id="userName"></span> <button onclick="signOut()">Odhlásiť sa</button>
+    </div>
+</aside>
+
+
+<h1>Pridaj príspevok</h1>
+
+
+<form>
+    <label for="author">Autor:</label>
+    <input type="text" name="author" id="author" size="20"
+           maxlength="100"/>
+
+    <br><br>
+
+
+    <label for="artcl">Obsah:</label>
+
+    <textarea name="artcl" id="artcl"  cols="50" rows="3"></textarea>
+    <br><br>
+
+    <input type="reset" value="Zmaž" />
+    <input type="submit" value="Odoslať" />
+</form>
+
+
+
+<script src="js/82GoogleAccessBetter.js"></script>
+<script src="https://apis.google.com/js/platform.js?onload=startGSingIn" async defer></script>
+</body>
+</html>
