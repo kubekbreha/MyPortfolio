@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <title>File Upload Using Firebase</title>
+    <style media="screen">
+        body{
+            display: flex;
+            min-height: 100vh;
+            width: 100%;
+            height:0;
+            margin:0;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #uploader{
+            -webkit-appearance:none;
+            appearance:none;
+            width:50%;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<progress value="0" max="100" id="uploader"></progress>
+<input type="file" value="upload" id="fileButton"><br>
+<div class="col-md-4">
+    <input type="text" class="form-control" id="fileLocation"></div>
+
+<script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+<script>
+
+    var config = {
+        apiKey: "AIzaSyAzZh0WLQgS2QSf5lD_RVkDW1MeKuX0Ty0",
+        authDomain: "myportfolio-1520234521619.firebaseapp.com",
+        databaseURL: "https://myportfolio-1520234521619.firebaseio.com",
+        projectId: "myportfolio-1520234521619",
+        storageBucket: "myportfolio-1520234521619.appspot.com",
+        messagingSenderId: "478569704717"
+    };
+    firebase.initializeApp(config);
+    var uploader=document.getElementById('uploader'),
+        fileButton=document.getElementById('fileButton');
+
+    fileButton.addEventListener('change', function(e) {
+
+        var file=e.target.files[0];
+
+        var storageRef=firebase.storage().ref("'/fileLocation/'"+file.name);
+        console.log(fileLocation);
+
+        var task=storageRef.put(file);
+
+        task.on('state_changed',
+
+            function progress(snapshot){
+                var percentage=( snapshot.bytesTransferred / snapshot.totalBytes )*100;
+                uploader.value=percentage;
+                if (percentage==100){
+                    alert("file uploaded Successfully");
+                }
+            },
+            function error(err){
+
+            },
+            function complete(){
+
+            }
+
+        );
+    });
+</script>
+
+</body>
+</html>

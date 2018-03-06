@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
     <title>Add Article</title>
 </head>
 
@@ -125,9 +128,15 @@
             </div>
         </div>
 
+        <div class="progress " id="uploader">
+            <div class="determinate" style="width: 70%"></div>
+        </div>
+
+        <div class="section"></div>
+
         <div class="row">
             <div class="col s12">
-                <a id="submit" onclick="submitClick()" class="waves-effect waves-light btn-large btn-large-admin hoverable green">submit</a>
+                <a id="submit" class="waves-effect waves-light btn-large btn-large-admin hoverable green">submit</a>
                 <a id="restart" class="waves-effect waves-light btn-large btn-large-admin right hoverable green">reset</a>
             </div>
         </div>
@@ -154,7 +163,6 @@
 <script src="Assets/js/firebase/visual_admin_navigation.js"></script>
 
 <!-- JavaScript -->
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 <script src="Assets/js/visual_scripts.js"></script>
 </body>
