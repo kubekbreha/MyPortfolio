@@ -11,9 +11,7 @@ function logout(){
 }
 
 
-
-
-//-------------------------------push data to database-------------------------------
+//-------------------------------push data of article to database-------------------------------
 function submitClick() {
     var uid = firebase.auth().currentUser.uid;
     var database = firebase.database();
@@ -38,15 +36,16 @@ function submitClick() {
 
     var data = {
         articleDate: articleDateString,
-        authorTime: articleTimeString,
-        authorName: articleNameString,
-        authorText: articleTextString
+        articleTime: articleTimeString,
+        articleName: articleNameString,
+        articleText: articleTextString
     };
     refArticles.push(data);
 
     window.alert("submit");
 }
 
+//-------------------------------push data of article to database-------------------------------
 
 function setUserData(){
     var uid = firebase.auth().currentUser.uid;

@@ -32,7 +32,8 @@
 
             <ul class="right hide-on-med-and-down ">
                 <li><a href="admin.html"><span class="black-text text-lighten-2">Add Project</span></a></li>
-                <li><a href="settings.html"><span class="black-text text-lighten-2">Settings</span></a></li>
+                <li><a href="admin_articles.html"><span class="black-text text-lighten-2">Articles</span></a></li>
+                <li><a href="admin_settings.html"><span class="black-text text-lighten-2">Settings</span></a></li>
                 <li><a onclick="logout()"><span class="black-text text-lighten-2">Log Out</span></a></li>
             </ul>
         </div>
@@ -42,8 +43,9 @@
 <div>
     <ul class="side-nav" id="mobile-demo">
         <li><a href="admin.html"><span class="black-text text-lighten-2">Add Project</span></a></li>
-        <li><a href="settings.html"><span class="black-text text-lighten-2">Settings</span></a></li>
-        <li><a onclick="logout()" ><span class="black-text text-lighten-2">Log Out</span></a></li>
+        <li><a href="admin_articles.html"><span class="black-text text-lighten-2">Articles</span></a></li>
+        <li><a href="admin_settings.html"><span class="black-text text-lighten-2">Settings</span></a></li>
+        <li><a onclick="logout()"><span class="black-text text-lighten-2">Log Out</span></a></li>
     </ul>
 </div>
 
@@ -52,44 +54,19 @@
     <div class="container">
         <div class="row">
             <div class="col 18 s12 white-text ">
-                <h3><span class="center black-text text-lighten-2 ">Add new article<span
+                <h3><span class="center black-text text-lighten-2 ">Articles<span
                         class="green-text">.</span></span></h3>
             </div>
         </div>
     </div>
 </header>
 
-
-<!-- Forms section -->
+<!-- Articles list section -->
 <div class="container">
-    <form class="col ">
-
-
-        <div class="row">
-            <div class="input-field col l6 s12">
-                <i class="material-icons prefix">account_circle</i>
-                <input id="input_name" type="text" class="validate">
-                <label for="input_name">Your name</label>
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="input-field col l6 s12">
-                <i class="material-icons prefix">email_circle</i>
-                <input id="input_email" type="text" class="validate">
-                <label for="input_email">Your email</label>
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="col s12">
-                <a id="submit" onclick="setUserData()" class="waves-effect waves-light btn-large btn-large-admin hoverable green">submit</a>
-            </div>
-        </div>
-
-    </form>
+    <p>
+    <ul id="articles_list">
+    </ul>
+    </p>
 </div>
 
 
@@ -107,7 +84,7 @@
     };
     firebase.initializeApp(config);
 </script>
-<script src="Assets/js/firebase/firebase_admin.js"></script>
+<script src="Assets/js/firebase/firebase_articles.js"></script>
 <script src="Assets/js/firebase/visual_admin_navigation.js"></script>
 
 <!-- JavaScript -->

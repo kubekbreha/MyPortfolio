@@ -54,7 +54,7 @@
     <div class="container">
         <div class="row">
             <div class="col 18 s12 white-text ">
-                <h3><span class="center black-text text-lighten-2 ">Add new article<span
+                <h3><span class="center black-text text-lighten-2 ">Profile setup<span
                         class="green-text">.</span></span></h3>
             </div>
         </div>
@@ -66,69 +66,28 @@
 <div class="container">
     <form class="col ">
 
+
         <div class="row">
             <div class="input-field col l6 s12">
-                <i class="material-icons prefix">title</i>
-                <input id="input_article_name" type="text" class="validate">
-                <label for="input_article_name">Aricle name</label>
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="material-icons prefix">mode_edit</i>
-                <textarea id="input_article_text" class="materialize-textarea"></textarea>
-                <label for="input_article_text">Text of article</label>
+                <i class="material-icons prefix">account_circle</i>
+                <input id="input_name" type="text" class="validate">
+                <label for="input_name">Your name</label>
             </div>
         </div>
 
 
         <div class="row">
             <div class="input-field col l6 s12">
-                <i class="material-icons prefix">date_range</i>
-                <input id="input_date" type="text" class="datepicker">
-                <label for="input_date">Date</label>
+                <i class="material-icons prefix">email_circle</i>
+                <input id="input_email" type="text" class="validate">
+                <label for="input_email">Your email</label>
             </div>
         </div>
 
-
-        <div class="row">
-            <div class="input-field col l6 s12">
-                <i class="material-icons prefix">access_time</i>
-                <input id="input_time" type="text" class="timepicker">
-                <label for="input_time">Time</label>
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="file-field input-field col s12">
-                <i class="material-icons prefix">add</i>
-                <input type="file" multiple>
-                <input id="input_article_image" class="file-path validate" type="text" placeholder="Upload one or more files">
-                <label for="input_article_image">Article Images</label>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="input-field col  s12">
-                <i class="material-icons prefix">insert_link</i>
-                <input id="input_image_url" type="text" class="validate">
-                <label for="input_image_url">Image url</label>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="input-field col s12">
-                <div class="chips chips-placeholder"></div>
-            </div>
-        </div>
 
         <div class="row">
             <div class="col s12">
-                <a id="submit" onclick="submitClick()" class="waves-effect waves-light btn-large btn-large-admin hoverable green">submit</a>
-                <a id="restart" class="waves-effect waves-light btn-large btn-large-admin right hoverable green">reset</a>
+                <a id="submit" onclick="setUserData()" class="waves-effect waves-light btn-large btn-large-admin hoverable green">submit</a>
             </div>
         </div>
 
