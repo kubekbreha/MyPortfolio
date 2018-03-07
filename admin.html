@@ -108,11 +108,12 @@
         <div class="row">
             <div class="file-field input-field col s12">
                 <i class="material-icons prefix">add</i>
-                <input type="file" multiple>
-                <input id="input_article_image" class="file-path validate" type="text" placeholder="Upload one or more files">
-                <label for="input_article_image">Article Images</label>
+                <input type="file" value="upload" id="fileButton">
+                <input type="text" class="form-control" id="image_file">
+                <label for="image_file">Image file</label>
             </div>
         </div>
+
 
         <div class="row">
             <div class="input-field col  s12">
@@ -128,15 +129,15 @@
             </div>
         </div>
 
-        <div class="progress " id="uploader">
-            <div class="determinate" style="width: 70%"></div>
+        <div class="progress " id="image_progress">
+            <div class="indeterminate"></div>
         </div>
 
         <div class="section"></div>
 
         <div class="row">
             <div class="col s12">
-                <a id="submit" class="waves-effect waves-light btn-large btn-large-admin hoverable green">submit</a>
+                <a id="submitButton" onclick="submitClick()" class="waves-effect waves-light btn-large btn-large-admin hoverable green">submit</a>
                 <a id="restart" class="waves-effect waves-light btn-large btn-large-admin right hoverable green">reset</a>
             </div>
         </div>

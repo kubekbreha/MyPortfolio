@@ -1,7 +1,3 @@
-//variables
-var fileName;
-var files;
-
 firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
     } else {
@@ -41,36 +37,20 @@ function submitClick() {
         articleTime: articleTimeString,
         articleName: articleNameString,
         articleText: articleTextString,
-        articleImageUrl: articleImageUrlString
+        articleImageUrl: articleImageUrlString,
+        articleFileName: file.name
     };
     refArticles.push(data);
 
-    uploadFile();
-
-    window.alert("submit");
-}
-
-
-var uploader = document.getElementById('uploader'),
-    fileButton = document.getElementById('submit');
-
-fileButton.addEventListener('change', function (e) {
-    window.alert("submit");
-
-    var file = e.target.files[0];
-
-    var storageRef = firebase.storage().ref("articleImages" + file.name);
-    console.log(fileLocation);
-
-    var task = storageRef.put(file);
-
+    document.getElementById("image_progress").style.visibility = "visible";
+    var percentage;
     task.on('state_changed',
 
         function progress(snapshot) {
-            var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-            uploader.value = percentage;
+            percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
             if (percentage == 100) {
-                alert("file uploaded Successfully");
+                window.alert("file pushed");
+                document.getElementById("image_progress").style.visibility = "hidden";
             }
         },
         function error(err) {
@@ -80,12 +60,24 @@ fileButton.addEventListener('change', function (e) {
 
         }
     );
+}
 
+//image upload variables
+
+var fileButton = document.getElementById('fileButton');
+var file;
+var storageRef;
+var task;
+
+fileButton.addEventListener('change', function (e) {
+    file = e.target.files[0];
+    var uid = firebase.auth().currentUser.uid;
+    storageRef = firebase.storage().ref("articleImages/" + uid +"/"+ file.name);
+    task = storageRef.put(file);
 });
 
 
 //-------------------------------push data of article to database-------------------------------
-
 function setUserData() {
     var uid = firebase.auth().currentUser.uid;
     var database = firebase.database();

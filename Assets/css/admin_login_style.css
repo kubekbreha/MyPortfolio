@@ -96,3 +96,8 @@ body {
     margin-right: 20px;
     margin-left: 20px;
 }
+
+
+#image_progress {
+    visibility: hidden;
+}
