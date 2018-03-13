@@ -44,14 +44,3 @@ $('.timepicker').pickatime({
     aftershow: function(){} //Function for after opening timepicker
 });
 
-
-
-
-$('.chips').material_chip();
-
-$('.chips-placeholder').material_chip({
-    placeholder: 'Enter a tag',
-    secondaryPlaceholder: '+Tag',
-});
-
-

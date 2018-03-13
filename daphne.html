@@ -157,6 +157,18 @@
 <!--</div>-->
 
 
+<!-- Comment Section -->
+<div id="comment-placeholder">
+</div>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+    $.get("add_comment.html", function (data) {
+        $("#comment-placeholder").replaceWith(data);
+    });
+</script>
+
+
+
 <!-- Footer Section -->
 <div id="footer-placeholder">
 </div>

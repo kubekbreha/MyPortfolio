@@ -69,12 +69,12 @@ var file;
 var storageRef;
 var task;
 
-fileButton.addEventListener('change', function (e) {
-    file = e.target.files[0];
-    var uid = firebase.auth().currentUser.uid;
-    storageRef = firebase.storage().ref("articleImages/" + uid +"/"+ file.name);
-    task = storageRef.put(file);
-});
+// fileButton.addEventListener('change', function (e) {
+//     file = e.target.files[0];
+//     var uid = firebase.auth().currentUser.uid;
+//     storageRef = firebase.storage().ref("articleImages/" + uid +"/"+ file.name);
+//     task = storageRef.put(file);
+// });
 
 
 //-------------------------------push data of article to database-------------------------------

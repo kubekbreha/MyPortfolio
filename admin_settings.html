@@ -45,7 +45,7 @@
         <li><a href="admin.html"><span class="black-text text-lighten-2">Add Project</span></a></li>
         <li><a href="admin_articles.html"><span class="black-text text-lighten-2">Articles</span></a></li>
         <li><a href="admin_settings.html"><span class="black-text text-lighten-2">Settings</span></a></li>
-        <li><a onclick="logout()" ><span class="black-text text-lighten-2">Log Out</span></a></li>
+        <li><a onclick="logout()"><span class="black-text text-lighten-2">Log Out</span></a></li>
     </ul>
 </div>
 
@@ -63,36 +63,39 @@
 
 
 <!-- Forms section -->
-<div class="container">
-    <form class="col ">
+<legend>
+    <div class="container">
+        <form class="col ">
 
 
-        <div class="row">
-            <div class="input-field col l6 s12">
-                <i class="material-icons prefix">account_circle</i>
-                <input id="input_name" type="text" class="validate">
-                <label for="input_name">Your name</label>
+            <div class="row">
+                <div class="input-field col l6 s12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="input_name" type="text" class="validate">
+                    <label for="input_name">Your name</label>
+                </div>
             </div>
-        </div>
 
 
-        <div class="row">
-            <div class="input-field col l6 s12">
-                <i class="material-icons prefix">email_circle</i>
-                <input id="input_email" type="text" class="validate">
-                <label for="input_email">Your email</label>
+            <div class="row">
+                <div class="input-field col l6 s12">
+                    <i class="material-icons prefix">email_circle</i>
+                    <input id="input_email" type="text" class="validate">
+                    <label for="input_email">Your email</label>
+                </div>
             </div>
-        </div>
 
 
-        <div class="row">
-            <div class="col s12">
-                <a id="submit" onclick="setUserData()" class="waves-effect waves-light btn-large btn-large-admin hoverable green">submit</a>
+            <div class="row">
+                <div class="col s12">
+                    <a id="submit" onclick="setUserData()"
+                       class="waves-effect waves-light btn-large btn-large-admin hoverable green">submit</a>
+                </div>
             </div>
-        </div>
 
-    </form>
-</div>
+        </form>
+    </div>
+</legend>
 
 
 <!-- Firebase JS -->
