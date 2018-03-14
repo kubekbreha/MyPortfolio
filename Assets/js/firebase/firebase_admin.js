@@ -42,7 +42,7 @@ function submitClick() {
     };
     refArticles.push(data);
 
-    document.getElementById("image_progress").style.visibility = "visible";
+    //document.getElementById("image_progress").style.visibility = "visible";
     var percentage;
     task.on('state_changed',
 
@@ -50,7 +50,7 @@ function submitClick() {
             percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
             if (percentage == 100) {
                 window.alert("file pushed");
-                document.getElementById("image_progress").style.visibility = "hidden";
+                //document.getElementById("image_progress").style.visibility = "hidden";
             }
         },
         function error(err) {
@@ -95,3 +95,16 @@ function setUserData() {
 
     refUser.set(userData);
 }
+
+
+
+function resetForms(){
+    document.getElementById("input_article_name").value = "";
+    document.getElementById("input_article_text").value = "";
+    document.getElementById("input_date").value = "";
+    document.getElementById("input_time").value = "";
+    document.getElementById("input_image_url").value = "";
+    document.getElementById("input_image_file").value = "";
+    document.getElementById("input_chips").value = "";
+}
+

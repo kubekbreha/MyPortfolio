@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
 
-
     <title>Add Article</title>
 </head>
 
@@ -70,7 +69,8 @@
         <div class="row">
             <div class="input-field col l6 s12">
                 <i class="material-icons prefix">title</i>
-                <input id="input_article_name" type="text" class="validate">
+                <input id="input_article_name" type="text" class="validate" required="" aria-required="true"
+                       pattern="^[a-zA-Z0-9]*$" title="Use just combinations of characters and numbers.">
                 <label for="input_article_name">Aricle name</label>
             </div>
         </div>
@@ -79,7 +79,7 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">mode_edit</i>
-                <textarea id="input_article_text" class="materialize-textarea"></textarea>
+                <textarea id="input_article_text" class="materialize-textarea validate" required=""></textarea>
                 <label for="input_article_text">Text of article</label>
             </div>
         </div>
@@ -119,7 +119,7 @@
                 <input type="file">
             </div>
             <div class="file-path-wrapper">
-                <input class="file-path validate" type="text">
+                <input id="input_image_file" class="file-path validate" type="text">
             </div>
         </div>
 
@@ -127,7 +127,7 @@
         <div class="row">
             <div class="input-field col  s12">
                 <i class="material-icons prefix">insert_link</i>
-                <input id="input_image_url" type="text" class="validate">
+                <input id="input_image_url" type="text">
                 <label for="input_image_url">Image url</label>
             </div>
         </div>
@@ -143,8 +143,7 @@
         </p>
 
 
-        <div class="chips-autocomplete"></div>
-
+        <div class="chips-autocomplete" id="input_chips"></div>
 
 
         <div class="progress " id="image_progress">
@@ -154,16 +153,26 @@
         <div class="section"></div>
 
         <div class="row">
-            <div class="col s12">
-                <a id="submitButton" onclick="submitClick()"
-                   class="waves-effect waves-light btn-large btn-large-admin hoverable green">submit</a>
-                <a id="restart"
+            <div class="input-field col s12">
+                <button class="waves-effect waves-light btn-large btn-large-admin hoverable green" type="submit"
+                        name="action">Submit
+                </button>
+                <a onclick="resetForms()" id="restart"
                    class="waves-effect waves-light btn-large btn-large-admin right hoverable green">reset</a>
+                <a href="projects.html" id="goToArticles"
+                   class="waves-effect waves-light btn-large btn-large-admin hoverable green">Articles</a>
+
             </div>
         </div>
     </form>
 </div>
 
+
+<!-- JavaScript -->
+<script src="Assets/js/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="Assets/js/visual_scripts.js"></script>
+<script src="Assets/js/autocomplete_chips.js"></script>
 
 <!-- Firebase JS -->
 <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
@@ -179,15 +188,9 @@
     };
     firebase.initializeApp(config);
 </script>
+
 <script src="Assets/js/firebase/firebase_admin.js"></script>
 <script src="Assets/js/firebase/visual_admin_navigation.js"></script>
-
-<!-- JavaScript -->
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-<script src="Assets/js/autocomplete_chips.js"></script>
-<script src="Assets/js/visual_scripts.js"></script>
 
 </body>
 
