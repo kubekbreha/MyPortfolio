@@ -1,0 +1,53 @@
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <ul class="breadcrumb">
+                    <li><a href="projects.html">Projects</a></li>
+                    <li>{{title}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <article>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col 18 s12 white-text ">
+                        <h1 class="article_name_font"><span class="center black-text text-lighten-2">{{title}}<span
+                                class="red-text">.</span></span></h1>
+                        <ul class="black-text">
+                            <li>
+                                <time>{{dateCreated}}</time>
+                            </li>
+                            <li>
+                                <p>{{author}}</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col l12 m12 s12">
+                    <p class="flow-text">
+                        <br>
+                        {{content}}
+                    </p>
+                </div>
+            </div>
+
+            <div class="col xl12 l12 m12 s12 center image_size">
+                    <img class=" rotate90" src="{{imageLink}}" alt="{{imageLink}}">
+            </div>
+
+        </div>
+    </article>
+</main>
+
+
+
+

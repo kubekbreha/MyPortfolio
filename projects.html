@@ -2,21 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>MyPortfolio</title>
+
+    <meta name="viewport" content="width-device-width, initial-scale- 1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- CSS -->
+    <!-- --------- CSS --------- -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link rel="stylesheet" href="../MyPortfolio2/css/styles.css">
-    <link rel="stylesheet" href="../MyPortfolio2/css/social_icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/social_icons.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
-    <title>Articles</title>
 </head>
 <body>
 
-<!-- Navigation Section -->
+<!-- --------- NavigationSection --------- -->
 <div id="nav-placeholder">
 </div>
 <script src="//code.jquery.com/jquery.min.js"></script>
@@ -26,18 +27,20 @@
     });
 </script>
 
-<!-- Articles Section -->
-<div id="articles-list-placeholder">
+
+<!-- --------- ProjectsSection --------- -->
+<div id="clanky"></div>
+
+<div class="container">
+    <div class="row">
+        <div class="center">
+            <a class="waves-effect waves-light btn" onclick="window.location.href='articleForm.html'">Add Project</a>
+        </div>
+    </div>
 </div>
-<script src="//code.jquery.com/jquery.min.js"></script>
-<script>
-    $.get("articles_list.html", function (data) {
-        $("#articles-list-placeholder").replaceWith(data);
-    });
-</script>
 
 
-<!-- Footer Section -->
+<!-- --------- FooterSection --------- -->
 <div id="footer-placeholder">
 </div>
 <script src="//code.jquery.com/jquery.min.js"></script>
@@ -47,9 +50,18 @@
     });
 </script>
 
-<!-- JavaScript -->
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<!-- --------- JS --------- -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-<script src="Assets/js/visual_scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+<script>window.Mustache || document.write('<script src="js/libs/mustache.min.js"><\/script>')</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery.min.js"><\/script>')</script>
+<script src="js/common/settings.js"></script>
+<script src="js/common/messages.js"></script>
+<script src="js/projects.js"></script>
+<script src="js/visual_scripts.js"></script>
+
 </body>
 </html>
+

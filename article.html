@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
 <head>
     <meta charset="UTF-8">
-    <title>MyPortfolio</title>
+    <title>Project</title>
 
     <meta name="viewport" content="width-device-width, initial-scale- 1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,7 +17,6 @@
 </head>
 <body>
 
-
 <!-- --------- NavigationSection --------- -->
 <div id="nav-placeholder">
 </div>
@@ -29,37 +28,20 @@
 </script>
 
 
-<!-- --------- HeroSection --------- -->
-<div class="parallax-container valign-wrapper">
+<main>
+    <div id="article"></div>
+    <br>
     <div class="container">
         <div class="row">
-            <div class="col 18 s12 white-text ">
-                <h1 class="article_name_font"><span class="black-text text-lighten-2">Hi<span class="red-text">.</span> I'm Jakub Brehuv<span
-                        class="red-text">.</span>
-                <br> Welcome to my Page<span class="red-text">.</span></span></h1>
-            </div>
-            <div class="col 14">
-                <a class="waves-effect btn-large hoverable black accent-2" href="projects.html">See my projects</a>
+            <div >
+                <!--<a id="btArtList" class="waves-effect waves-light btn">Projects</a>-->
+                <a id="btUpdate" class="waves-effect waves-light btn " onclick="window.location.href='articleForm.html'">Edit</a>
+                <a id="btDelete" class="waves-effect waves-light btn right" onclick="window.location.href='articleForm.html'">Delete</a>
             </div>
         </div>
     </div>
-</div>
+</main>
 
-
-<!-- --------- AboutMeSection --------- -->
-<div class="container">
-    <div class="row">
-        <h2 class="section-name">About me<span class="red-text">.</span></h2>
-    </div>
-    <div class="row">
-        <p class="flow-text">
-            I'm student who have passion for IT. I'm trying to improve my programming skills every day an I'm grateful
-            for every opportunity to learn new things.
-            This is simple self propagation page where you can see some of my projects on which I have worked or on
-            which I'm currently working.
-        </p>
-    </div>
-</div>
 
 
 <!-- --------- FooterSection --------- -->
@@ -74,10 +56,15 @@
 
 
 <!-- --------- JS --------- -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+<script>window.Mustache || document.write('<script src="js/libs/mustache.min.js"><\/script>')</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="js/visual_scripts.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery.min.js"><\/script>')</script>
+<script src="js/common/settings.js"></script>
+<script src="js/common/queryStringProcessing.js"></script>
+<script src="js/common/messages.js"></script>
+<script src="js/article.js"></script>
 
 </body>
 </html>
+

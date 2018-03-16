@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        {{#articles}}
+        <div class="col l6 s12 m12">
+            <div class="card">
+                <div class="card-image">
+                    <a href="article.html?id={{id}}">
+                        <img title="Daphne article" src="img/expo.JPG" alt="daphne project">
+                    </a>
+                    <span class="card-title">{{title}}</span>
+                </div>
+                <div class="card-content">
+                    <p>{{author}} ({{dateCreated}})</p>
+                </div>
+            </div>
+        </div>
+        {{/articles}}
+    </div>
+</div>
+
+
+
+
+
