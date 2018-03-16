@@ -52,6 +52,20 @@
 
 
 <!-- --------- JS --------- -->
+<!-- --------- Firebase --------- -->
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAzZh0WLQgS2QSf5lD_RVkDW1MeKuX0Ty0",
+        authDomain: "myportfolio-1520234521619.firebaseapp.com",
+        databaseURL: "https://myportfolio-1520234521619.firebaseio.com",
+        projectId: "myportfolio-1520234521619",
+        storageBucket: "myportfolio-1520234521619.appspot.com",
+        messagingSenderId: "478569704717"
+    };
+    firebase.initializeApp(config);
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
 <script>window.Mustache || document.write('<script src="js/libs/mustache.min.js"><\/script>')</script>
@@ -61,6 +75,7 @@
 <script src="js/common/messages.js"></script>
 <script src="js/projects.js"></script>
 <script src="js/visual_scripts.js"></script>
+<script src="js/firebase/firebase.js"></script>
 
 </body>
 </html>
