@@ -86,6 +86,51 @@ $("#btCancelFileUpload").click(function(){
 //funkcie
 
 
+
+
+
+
+
+
+
+
+
+window.onload = function() {
+    setFirstFormElement()
+};
+
+function setFirstFormElement() {
+    firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+            var uid = user.uid;
+            console.log(user.uid);
+
+            var userName = "";
+
+            var database = firebase.database();
+            var refUser = database.ref('users').child(uid).child("userInfo");
+            refUser.once("value", function (snapshot) {
+                snapshot.forEach(function (child) {
+                    if (child.key === "userName") {
+                        console.log(child.key + ": " + child.val());
+                        userName = child.val();
+                        document.getElementById("author").value = userName;
+                        console.log("username from form:  " + userName);
+                    }
+                });
+            });
+        } else {
+            window.location.href = "login.html";
+        }
+    });
+}
+
+
+
+
+
+
+
 /**
  * Spracuje údaje o článku z formulára a odošle na uloženie na server
  * @param $frm - formulár s článkom (jQuery objekt)
@@ -93,8 +138,6 @@ $("#btCancelFileUpload").click(function(){
  * @param restURL - url zdroja na serveri
  */
 function prepareAndSendArticle($frm, method, restURL) {
-
-
     //1. Uloží údaje z formulára do objektu
     var data = {};
     $frm.serializeArray().map(

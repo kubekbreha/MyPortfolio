@@ -235,3 +235,8 @@ ul.breadcrumb li a:hover {
     color: black;
     text-decoration: underline;
 }
+
+
+.invisible{
+    visibility:hidden
+}

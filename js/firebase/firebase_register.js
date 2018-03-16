@@ -24,5 +24,5 @@ function register() {
 
 
 function backToLogin() {
-    window.location.href = "admin_login.html";
+    window.location.href = "login.html";
 }

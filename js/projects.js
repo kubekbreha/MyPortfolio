@@ -44,21 +44,44 @@ function addNavBtInfo(articles, startIndex){
  * @param articlesElmId - Id elementu do ktorého sa články majú vypísať
  */
 function writeArticles2Html(startIndex, max, server, articlesElmId){
-    $.ajax({
-        type: 'GET',
-        url: "http://"+server+"/api/article?author=Jozef",
-        data: { max: max, offset: startIndex },
-        dataType: "json",
-        success: function (articles) {
-            addNavBtInfo(articles,startIndex);
-            $.get("templates/listOfArticles.mst",      //get() je vlastne specialna verzia ajax()
-                function (template) {
-                    $("#"+articlesElmId).html(Mustache.render(template, articles));
-                }
-                ,"text");
-        },
-        error:function(jxhr){
-            errorAlert("Načitanie článkov zlyhalo.",jxhr);
+    firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+            var uid = user.uid;
+            console.log(user.uid);
+
+            var userName = "";
+
+            var database = firebase.database();
+            var refUser = database.ref('users').child(uid).child("userInfo");
+            refUser.once("value", function(snapshot) {
+                snapshot.forEach(function(child) {
+                    if(child.key === "userName"){
+                        console.log(child.key+": "+child.val());
+                        userName = child.val();
+
+                        //actual getting of articles
+                        $.ajax({
+                            type: 'GET',
+                            url: "http://"+server+"/api/article?author="+userName,
+                            data: { max: max, offset: startIndex },
+                            dataType: "json",
+                            success: function (articles) {
+                                addNavBtInfo(articles,startIndex);
+                                $.get("templates/listOfArticles.mst",      //get() je vlastne specialna verzia ajax()
+                                    function (template) {
+                                        $("#"+articlesElmId).html(Mustache.render(template, articles));
+                                    }
+                                    ,"text");
+                            },
+                            error:function(jxhr){
+                                errorAlert("Načitanie článkov zlyhalo.",jxhr);
+                            }
+                        });
+                    }
+                });
+            });
+        } else {
+            window.location.href = "login.html";
         }
     });
 }

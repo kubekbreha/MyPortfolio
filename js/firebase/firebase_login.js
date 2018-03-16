@@ -22,7 +22,7 @@ function logIn() {
 
 //open register web
 function openRegister() {
-    window.location.href = "admin_register.html";
+    window.location.href = "register.html";
 }
 
 //google sign in
