@@ -2,19 +2,45 @@
 <html lang="sk">
 <head>
     <meta charset="UTF-8">
-    <title>Formulár článku</title>
-    <link rel="stylesheet" href="css/normalize.css" media="screen" />
-    <link rel="stylesheet"
-          href="css/blogStyleBasic.css"
-          media="screen" />
+    <title>Add project</title>
+
+    <meta name="viewport" content="width-device-width, initial-scale- 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- --------- CSS --------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/social_icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
 </head>
 <body>
-<header>
-    <h1 id="frmTitle">Pridaj článok</h1>
-</header>
+
+<!-- --------- NavigationSection --------- -->
+<div id="nav-placeholder">
+</div>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+    $.get("navigation.html", function (data) {
+        $("#nav-placeholder").replaceWith(data);
+    });
+</script>
 
 <main>
-<!--
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col 18 s12 white-text ">
+                    <h1 class="article_name_font"><span class="center black-text text-lighten-2">Add new project<span
+                            class="red-text">.</span></span></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--
 Keďže vo funkcii, ktorá formulár spracuváva bude volaním funkcie
 preventDefault() na udalosť submit
 zrušené pôvodné správanie, je jedno čo dát do atribútov method a action.
@@ -27,75 +53,79 @@ Ja som tu dal ako action badProcessing.html, čo je stránka s chybovým hlásen
 Indikuje, že je problém s javascript-om a údaje neboli odoslané.
 
 -->
-<form id="SKorFrm" method="post" action="badProcessing.html">
-    <label for="author">Autor:</label>
-    <input type="text" name="author" id="author" size="50" title="Autor článku. Maximálna dĺžka: 100 znakov." maxlength="100" placeholder="napr. Ján Trieska" />
-    <br>
-    <label for="title">Názov:</label>
-    <input type="text" name="title" id="title" size="50"  maxlength="100" pattern="\S[\S\s]*" required title="Názov článku. Povinná položka. Maximálna dĺžka: 100 znakov. Prvý znak nesmie byť medzera." placeholder="napr. Môj prvý príbeh" />
-    <!--
-    \s =  match any white space character
-    \S =  match any non-white space character
-    -->
-    <br>
-    <label for="imageLink">Obrázok (url):</label>
-    <input type="url" name="imageLink" id="imageLink" size="50" title="Názov článku. Maximálna dĺžka: 100 znakov." maxlength="100"/>
-    <br>
-    <label></label><button type="button" id="btShowFileUpload">Nahraj obrázok</button>
 
-    <fieldset class="added skryty" id="fsetFileUpload">
-        <legend>Nahranie obrázka</legend>
-        <input type="file" id="flElm" name="file" accept="image/jpeg, image/png"/>
-        <button type="button" id="btFileUpload">Odošli obrázok na server</button>
-        <button type="button" id="btCancelFileUpload">Zruš nahrávanie</button>
-    </fieldset>
+    <form id="SKorFrm" method="post" action="badProcessing.html">
+        <div class="container">
+            <label for="author">Autor:</label>
+            <input type="text" name="author" id="author" size="50" title="Autor článku. Maximálna dĺžka: 100 znakov."
+                   maxlength="100" placeholder="napr. Ján Trieska"/>
+            <br>
+            <label for="title">Názov:</label>
+            <input type="text" name="title" id="title" size="50" maxlength="100" pattern="\S[\S\s]*" required
+                   title="Názov článku. Povinná položka. Maximálna dĺžka: 100 znakov. Prvý znak nesmie byť medzera."
+                   placeholder="napr. Môj prvý príbeh"/>
+            <!--
+            \s =  match any white space character
+            \S =  match any non-white space character
+            -->
+            <br>
+            <label for="imageLink">Obrázok (url):</label>
+            <input type="url" name="imageLink" id="imageLink" size="50"
+                   title="Názov článku. Maximálna dĺžka: 100 znakov." maxlength="100"/>
+            <br>
+            <label></label>
+            <button type="button" id="btShowFileUpload">Nahraj obrázok</button>
 
-
-    <br>
-    <label for="content">Text článku:</label>
-    <textarea name="content" id="content" spellcheck="true" lang="sk" cols="50" rows="20" required title="Obsah článku. Povinná položka.  Môže byť obyčajný text alebo html."></textarea>
-    <br>
-    <label for="tags">Kľúčové slová:</label>
-    <input type="text" name="tags" id="tags" size="50" title="Zoznam kľúčových slov oddelených čiarkou." placeholder="napr. dedina, dráma" />
-
-    <br>
-    <br>
-    <button type="button" id="btBack">
-        Späť
-    </button>
-    <button type="reset">
-        Vymaž formulár
-    </button>
-    <button type="submit">
-        Ulož článok
-    </button>
+            <fieldset class="added skryty" id="fsetFileUpload">
+                <legend>Nahranie obrázka</legend>
+                <input type="file" id="flElm" name="file" accept="image/jpeg, image/png"/>
+                <button type="button" id="btFileUpload">Odošli obrázok na server</button>
+                <button type="button" id="btCancelFileUpload">Zruš nahrávanie</button>
+            </fieldset>
 
 
-</form>
+            <br>
+            <label for="content">Text článku:</label>
+            <textarea name="content" id="content" spellcheck="true" lang="sk" cols="50" rows="20" required
+                      title="Obsah článku. Povinná položka.  Môže byť obyčajný text alebo html."></textarea>
+            <br>
+            <label for="tags">Kľúčové slová:</label>
+            <input type="text" name="tags" id="tags" size="50" title="Zoznam kľúčových slov oddelených čiarkou."
+                   placeholder="napr. dedina, dráma"/>
 
+            <br>
+            <br>
+
+
+            <button type="button" id="btBack">Back</button>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+
+            <br>
+            <br>
+
+        </div>
+    </form>
 </main>
 
-
-
+<!-- --------- FooterSection --------- -->
+<div id="footer-placeholder">
+</div>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+    $.get("footer.html", function (data) {
+        $("#footer-placeholder").replaceWith(data);
+    });
+</script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
 <script>window.Mustache || document.write('<script src="js/libs/mustache.min.js"><\/script>')</script>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery.min.js"><\/script>')</script>
-
-
 <script src="js/common/settings.js"></script>
-
-
-
-
-<script src="js/common/ajaxCalls.js"></script>
-<script src="js/common/mustacheRenderer.js"></script>
 <script src="js/common/queryStringProcessing.js"></script>
-<script src="js/common/formProcessing.js"></script>
-
 <script src="js/articleForm.js"></script>
+<script src="js/visual_scripts.js"></script>
 
 </body>
 </html>
