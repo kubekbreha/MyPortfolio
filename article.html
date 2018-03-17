@@ -45,44 +45,41 @@
 </main>
 
 <!-- --------- CommentSection --------- -->
-<div id="komentare"></div>
-
-
 <div class="container">
     <hr>
     <div class="row">
         <h5 class="section-name">Add comment<span class="red-text">.</span></h5>
     </div>
-    <form class="col ">
 
+
+    <form id="commentForm" method="post" action="badProcessing.html">
+        <div class="row ">
+            <label for="author">Autor:</label>
+            <input type="text" name="author" id="author" size="50"
+                   title="Autor komentaru. Maximálna dĺžka: 100 znakov."
+                   maxlength="100" placeholder="napr. Ján Trieska"/>
+        </div>
 
         <div class="row">
-            <div class="input-field col s12">
-                <i class="material-icons prefix">mode_edit</i>
-                <textarea id="comment_article_text" class="materialize-textarea"></textarea>
-                <label for="comment_article_text">Comment text</label>
-            </div>
+            <label for="text">Názov:</label>
+            <input type="text" name="text" id="text" size="50" maxlength="100" title="Your comment."
+                   placeholder="What a great game!"/>
         </div>
 
 
         <div class="row">
             <div class="col s12">
-                <button onclick="commentSubmit()" class="waves-effect waves-light btn-large btn-large-admin hoverable green">Submit
+                <button onclick="commentSubmit()"
+                        class="waves-effect waves-light btn-large btn-large-admin hoverable green">Submit
                 </button>
             </div>
         </div>
 
-        <div class="row invisible" >
-            <div class="input-field col l6 s12">
-                <i class="material-icons prefix">face</i>
-                <input id="comment_user_name" type="text" class="validate" required="" aria-required="true">
-                <label for="comment_user_name">User name</label>
-            </div>
-        </div>
-
-
     </form>
+    <!--list of comments-->
+    <div id="komentare"></div>
 </div>
+
 
 <!-- --------- FooterSection --------- -->
 <div id="footer-placeholder">
