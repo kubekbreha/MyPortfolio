@@ -1,4 +1,4 @@
-console.log("Zacinam stahovat zoznam clankov ...");
+console.log("Downloading articles ...");
 
 writeArticles2Html(0, articlesForPage, server, 'clanky');
 
