@@ -1,47 +1,36 @@
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//Kód, ktorý sa vykoná pri načítaní skriptu
-
-
 console.log("Zacinam stahovat zoznam clankov ...");
 
+writeArticles2Html(0, articlesForPage, server, 'clanky');
 
-//Výpis prvých maximálne pocetClankovNaStranu článkov a zápis informácie do navigačného panela
-writeArticles2Html(0, pocetClankovNaStranu, server, 'clanky');
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//funkcie
 
 
 /**
- * prida k objektu articles objekt s udajmi pre navigacne tlacidla
- * @param articles - objekt s clankami, ku ktoremu sa pridaju udaje pre navigacne tlacidla.
- * @param startIndex - index (poradové číslo článku od 0) od ktorého sa články vypisujú
- * @returns {Object} - objekt articles  s pridanymi udajmi pre navigacne tlacidla
+ * add to articles object, object whith data for nav buttons
+ * @param articles - objekt with articles
+ * @param startIndex - index (article number from 0)
+ * @returns {Object} - objekt articles  with nav bar buttons
  */
 
 function addNavBtInfo(articles, startIndex){
     if(startIndex>0) {
         articles.prev = {
-            from:  (startIndex - pocetClankovNaStranu > 0 ? startIndex - pocetClankovNaStranu : 0),
+            from:  (startIndex - articlesForPage > 0 ? startIndex - articlesForPage : 0),
         };
     }
-    if(startIndex+pocetClankovNaStranu<articles.meta.totalCount){
+    if(startIndex+articlesForPage<articles.meta.totalCount){
         articles.nxt={
-            from:  startIndex+pocetClankovNaStranu,
+            from:  startIndex+articlesForPage,
         };
     }
 }
 
 
 /**
- * Zapíše údaje o článkoch do elementu s id articlesElmId a HTML kód navigácie do elementu s id navElmId
- * Iba verzia s Mustache sablonou z elementu s id =listOfArticlesMTemplate
- * @param startIndex - index (poradové číslo čláanku od 0) od ktorého sa články vypisujú
- * @param max - maximálny počet článkov.
- * @param server - doménové meno servera odkiaľ sa majú údaje stiahnuť.
- * @param articlesElmId - Id elementu do ktorého sa články majú vypísať
+ * Write data about articles to element whith id articlesElmID an nav to element navElmId
+ * @param startIndex - index (poradové číslo čláanku od 0)
+ * @param max - max amount of articles per page.
+ * @param server - name of server where articles sit.
+ * @param articlesElmId - Id of element where articles will be writen
  */
 function writeArticles2Html(startIndex, max, server, articlesElmId){
     firebase.auth().onAuthStateChanged(function (user) {
@@ -67,14 +56,14 @@ function writeArticles2Html(startIndex, max, server, articlesElmId){
                             dataType: "json",
                             success: function (articles) {
                                 addNavBtInfo(articles,startIndex);
-                                $.get("templates/listOfArticles.mst",      //get() je vlastne specialna verzia ajax()
+                                $.get("templates/listOfArticles.mst",
                                     function (template) {
                                         $("#"+articlesElmId).html(Mustache.render(template, articles));
                                     }
                                     ,"text");
                             },
                             error:function(jxhr){
-                                errorAlert("Načitanie článkov zlyhalo.",jxhr);
+                                errorAlert("Loading of articles failed.",jxhr);
                             }
                         });
                     }

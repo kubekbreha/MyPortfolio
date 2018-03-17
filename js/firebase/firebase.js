@@ -1,3 +1,4 @@
+//check if uer is logged
 firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
     } else {
@@ -5,7 +6,7 @@ firebase.auth().onAuthStateChanged(function (user) {
     }
 });
 
-
+//logout button
 function logout() {
     firebase.auth().signOut();
 }

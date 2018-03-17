@@ -49,6 +49,7 @@ function callGoogleSignIn(){
 }
 
 
+//facebook sign in
 function callFacebookSignIn() {
     var provider = new firebase.auth.FacebookAuthProvider();
     firebase.auth().signInWithPopup(provider).then(function(result) {

@@ -1,25 +1,9 @@
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//Poznámky
-
-/*
-Ak by som chcel overiť validitu samostatne, zavolám na formulár alebo konkrétny prvok
-checkValidity()
-POZOR: toto síce overí validitu, ale bez klasických html výpisov
-Viac o js funkcionalite pre HTML5 validáciu:
-
-http://www.w3schools.com/js/js_validation_api.asp
-*/
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//Kód, ktorý sa vykoná pri načítaní skriptu
-
 var $form = $("#SKorFrm");
 var artId = queryString2obj().id;
 
 
 if (isFinite(artId)){
-    console.log("upravit clanok "+artId);
+    console.log("edit article "+artId);
 
     $.ajax({
         type: 'GET',
@@ -31,26 +15,24 @@ if (isFinite(artId)){
                 $("#imageLink").val(article.imageLink);
                 $("#content").val(article.content);
                 $("#tags").val(article.tags);
-                $("#frmTitle").html("Uprav článok");
+                $("#frmTitle").html("Edit article");
         },
         error:function(jxhr){
-            window.alert("Načítanie článku na editáciu neúspešné.\nChyba: "+ jxhr.status + " (" + jxhr.statusText + ")");
+            window.alert("Loading article for edit failed.\nError: "+ jxhr.status + " (" + jxhr.statusText + ")");
         }
     });
 }else{
-    $("#frmTitle").html("Pridaj článok");
+    $("#frmTitle").html("Add article");
 }
 
-
-
-//Pridanie funkcionality pre kliknutie na tlacidlo "Späť"
+//go back button
 $("#btBack").click(function(){
     window.history.back()
 });
 
-//Pridanie funkcionality pre kliknutie na tlacidlo "Ulož článok"
-$form.submit(function(event){  //tu potrebujem aj objekt s udalosťou, aby som
-    event.preventDefault(); //zrušiť pôvodné spracovanie udalosti
+//commit article button
+$form.submit(function(event){
+    event.preventDefault();
     if (isFinite(artId)) {
         prepareAndSendArticle($form,"PUT","http://"+server+"/api/article/"+artId);
     }else{
@@ -59,7 +41,7 @@ $form.submit(function(event){  //tu potrebujem aj objekt s udalosťou, aby som
 
 });
 
-//Pridanie funkcionality pre kliknutie na tlacidlo "Nahraj obrázok"
+//load image stuff.
 $("#btShowFileUpload").click(function(){
     $('#fsetFileUpload').removeClass("skryty");
     $('#btShowFileUpload').addClass("skryty");
@@ -67,29 +49,21 @@ $("#btShowFileUpload").click(function(){
 });
 
 
-//Pridanie funkcionality pre kliknutie na tlacidlo "Odošli obrázok na server"
+//Send to server button
 $("#btFileUpload").click(function(){
     uploadImg(
         $('#imageLink'),
         $('#fsetFileUpload'),
         $('#btShowFileUpload'),
-        document.getElementById('flElm').files //stary sposob, jQuery verzia nema files
+        document.getElementById('flElm').files
     );
 });
 
-//Pridanie funkcionality pre kliknutie na tlacidlo "Zruš nahrávanie"
+//stop loading
 $("#btCancelFileUpload").click(function(){
     $('#fsetFileUpload').addClass("skryty");
     $('#btShowFileUpload').removeClass("skryty");
 });
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//funkcie
-
-
-
-
-
-
 
 
 
@@ -99,6 +73,7 @@ window.onload = function() {
     setFirstFormElement()
 };
 
+//set user name from firebase to author form
 function setFirstFormElement() {
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
@@ -127,60 +102,51 @@ function setFirstFormElement() {
 
 
 
-
-
-
-
 /**
- * Spracuje údaje o článku z formulára a odošle na uloženie na server
- * @param $frm - formulár s článkom (jQuery objekt)
- * @param method - metóda, "POST" (pridanie článku) alebo "PUT" (úprava článku)
- * @param restURL - url zdroja na serveri
+ * Proess data from form and send them to server.
+ * @param $frm - form (jQuery objekt)
+ * @param method - metóda, "POST" (add article) or "PUT" (edit article)
+ * @param restURL - url of source on server
  */
 function prepareAndSendArticle($frm, method, restURL) {
-    //1. Uloží údaje z formulára do objektu
+    //1. save data from form to object
     var data = {};
     $frm.serializeArray().map(
         function(item){
             var itemValueTrimmed = item.value.trim();
-            if(itemValueTrimmed){//ak je hodnota neprázdny reťazec
+            if(itemValueTrimmed){
                 data[item.name] = item.value;
             }
         }
     );
 
 
-    console.log("prepareAndSendArticle> Údaje po uložení z formulára do objektu:");
+    console.log("prepareAndSendArticle> data after saving into object:");
     console.log(JSON.stringify(data));
 
-    //2.Upraví údaje vo form2trimmedStringsObject do podoby vhodnej na odoslanie
-    if(data.tags){ //ak existuje položka tags a nie je to prázdny reťazec
-                   //ak chcem len vedieť, či data má položku tags, ideálne je volať
-                   //Object.prototype.hasOwnProperty.call(data, 'tags')
-                   //viď. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty
-        data.tags=data.tags.split(","); //zmeni retazec na pole. Oddelovac poloziek je ciarka.
-        data.tags=data.tags.map(function(tag) {return tag.trim()}); //odstráni prázdne znaky na začiatku a konci každého kľúčového slova
+    if(data.tags){
+        data.tags=data.tags.split(",");
+        data.tags=data.tags.map(function(tag) {return tag.trim()});
     }
 
-    console.log("prepareAndSendArticle> Údaje po úprave tags na pole:");
+    console.log("prepareAndSendArticle> tags after processing:");
     console.log(JSON.stringify(data));
 
-    //3.Kontrola, či boli zadané povinné polia
-    if(!data.title){ //toto len pre istotu
-        alert("Názov článku musí byť zadaný a musí obsahovať čitateľné znaky");
+    //3.Check if needed forms was filled
+    if(!data.title){
+        alert("Article name must be filled");
         return;
     }
-    if(!data.content){ //toto je dôležité, keďže na textarea sa nedá použiť pattern. Odchytí, keď používateľ do prvku content
-                       //zadal iba biele znaky
-        alert("Obsah článku musí byť zadaný a musí obsahovať čitateľné znaky.");
+    if(!data.content){
+        alert("Text of article must be filled");
         return;
     }
 
-    console.log("prepareAndSendArticle> Povinné údaje úspešne skontrolované:");
+    console.log("prepareAndSendArticle> All needed forms filled:");
 
 
-    //4. odoslanie údajov
-    if(window.confirm("Skutočne si želáte článok zapísať do databázy?")){
+    //4. sending data
+    if(window.confirm("You realy want to sa this project")){
 
         $.ajax({
             type: method,
@@ -195,7 +161,7 @@ function prepareAndSendArticle($frm, method, restURL) {
                 }
             },
             error: function (jxhr) {
-                window.alert("Spracovanie neúspešné. Údaje neboli zapísané. Kód chyby:" + status + "\n" + jxhr.statusText + "\n" + jxhr.responseText);
+                window.alert("Processing failed. Data was not saved. Error code:" + status + "\n" + jxhr.statusText + "\n" + jxhr.responseText);
             }
         });
 
@@ -206,15 +172,14 @@ function prepareAndSendArticle($frm, method, restURL) {
 function uploadImg($imgLinkElement,$fieldsetElement, $btShowFileUploadElement, files) {
     if (files.length>0){
         var imgData = new FormData();
-        imgData.append("file", files[0]); //beriem len prvy obrazok, ved prvok formulara by mal povolit len jeden
-        console.log("ide upload");
-        //pozor:nezadavat content-type. potom to nepojde.
+        imgData.append("file", files[0]);
+        console.log("upload working");
         $.ajax({
             type: "POST",
             url: "http://"+server+"/api/fileUpload",
             dataType: "json",
-            processData: false, //toto musim dat, aby sa jQuery nesnazil udaje spracovavat. inak vyvola  “Uncaught TypeError: Illegal invocation”
-            contentType: false, //toto musim dat, aby server poziadavku spracoval
+            processData: false,
+            contentType: false,
             data:imgData,
             success: function (response) {
                 if(response.fullFileUrl){
@@ -224,10 +189,10 @@ function uploadImg($imgLinkElement,$fieldsetElement, $btShowFileUploadElement, f
                 }
             },
             error: function (jxhr) {
-                window.alert("Spracovanie neúspešné. Obrázok nebol uložený na serveri. Kód chyby:" + status + "\n" + jxhr.statusText + "\n" + jxhr.responseText);
+                window.alert("Processing failed. Picture was not saved. Error code:" + status + "\n" + jxhr.statusText + "\n" + jxhr.responseText);
             }
         });
     }else{
-        window.alert("Vyberte súbor s obrázkom");
+        window.alert("Pick picture file");
     }
 }

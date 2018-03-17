@@ -1,8 +1,8 @@
 /**
- * Zobrazí vyskakovacie okno s chybovým hlásením
- * @param message - text chybovej správy, ktorý sa má vypísať prvý
- * @param xhrObj - objekt xhttp požiadavky (typ XMLHttpRequest alebo jqXHR)
+ * Show alert window with eror.
+ * @param message test of the error.
+ * @param xhrObj - object xhttp of request (XMLHttpRequest or jqXHR)
  */
 function errorAlert(message,xhrObj){
-    window.alert(message+"\nChyba: "+ xhrObj.status + " (" + xhrObj.statusText + ")");
+    window.alert(message+"\nError: "+ xhrObj.status + " (" + xhrObj.statusText + ")");
 }

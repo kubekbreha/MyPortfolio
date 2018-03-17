@@ -1,6 +1,6 @@
-//Počet naraz zobrazených článkov
-var pocetClankovNaStranu=20;
+//size of articles on one page
+var articlesForPage=20;
 
-//Doménové meno servera s databázou článkov
+//Domain name of server with articles
 var server="wt.kpi.fei.tuke.sk";
 //var server="192.168.56.101";

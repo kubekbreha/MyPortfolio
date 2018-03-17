@@ -5,11 +5,11 @@
             <div class="card">
                 <div class="card-image">
                     <a href="article.html?id={{id}}">
-                        <img title="Daphne article" src="img/expo.JPG" alt="daphne project">
+                        <img src="{{imageLink}}" alt="{{imageLink}}"">
                     </a>
                     <span class="card-title">{{title}}</span>
                 </div>
-                <div class="card-content">
+                <div class="card-content" href="article.html?id={{id}}">
                     <p>{{author}} ({{dateCreated}})</p>
                 </div>
             </div>

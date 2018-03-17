@@ -1,10 +1,9 @@
 /**
- * Sparsuje query string do objektu
- * Pozor! Ak je viac položiek s rovnakým menom, uloží sa do príslušnej položky iba posledná.
- * @returns objekt s query string
+ * Parse qery string to object
+ * Warning! If items with same name only last one vill be saved.
+ * @returns objest with query string.
  */
 function queryString2obj(){
-//upraveny kod z http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
     var urlParams = {},
         match,
         pl     = /\+/g, // Regex for replacing addition symbol with a space:
@@ -19,7 +18,6 @@ function queryString2obj(){
 
         decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
         query  = window.location.search.substring(1);
-
     while (match = search.exec(query))
         urlParams[decode(match[1])] = decode(match[2]);
     return urlParams;

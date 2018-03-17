@@ -1,13 +1,8 @@
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//Kód, ktorý sa vykoná pri načítaní skriptu
-
 var artId = queryString2obj().id;
 var restURL ="http://"+server+"/api/article/"+artId;
 
 writeArticle2Html(restURL,"article",artId);
 
-
-//Pridanie funkcionality pre kliknutie na tlacidla
 $("#btArtList").click(function(){
     window.location.href='index.html';
 });
@@ -20,12 +15,13 @@ $("#btDelete").click(function(){
     deleteArticle(restURL);
 });
 
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//funkcie
-
-
-
+/**
+ * write article to html page.
+ *
+ * @param sourceURL
+ * @param articleElmId
+ * @param articleId
+ */
 function writeArticle2Html(sourceURL,articleElmId, articleId){
     if (isFinite(articleId)){
         $.ajax({
@@ -33,35 +29,34 @@ function writeArticle2Html(sourceURL,articleElmId, articleId){
             url: sourceURL,
             dataType: "json",
             success: function (article) {
-                $.get("templates/article.mst",      //get() je vlastne specialna verzia ajax()
-                    function (template) {
+                $.get("templates/article.mst", function (template) {
                         $("#"+articleElmId).html(Mustache.render(template, article));
                     }
                     ,"text")
             },
             error:function(jxhr){
-                errorAlert("Načitanie článku zlyhalo.",jxhr);
+                errorAlert("Loading of article failed",jxhr);
             }
         });
     }
 }
 
 /**
- * Vymazanie článku aj s komentármi
- * @param articleId - id článku na vymazanie
+ * Deleting of article with its comments.
+ * @param sourceURL
  */
 function deleteArticle(sourceURL){
-    if(window.confirm("Skutočne si želáte vymazať článok aj s jeho komentármi?")) {
+    if(window.confirm("Are you sure you want to delete this projec?")) {
 
         $.ajax({
             type: 'DELETE',
             url: sourceURL,
             success: function () {
-                window.alert("Článok úspešne vymazaný");
+                window.alert("Project was deleted");
                 window.location.href = "index.html";
             },
             error: function (jxhr) {
-                errorAlert("Vymazanie neúspešné.",jxhr);
+                errorAlert("Deleting failed.",jxhr);
             }
         });
 
