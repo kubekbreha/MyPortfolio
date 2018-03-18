@@ -1,7 +1,8 @@
 console.log("Downloading articles ...");
 
-writeArticles2Html(0, articlesForPage, server, 'clanky');
+var startIndex = 0;
 
+writeArticles2Html(0, articlesForPage, server, 'clanky');
 
 
 /**
@@ -11,15 +12,15 @@ writeArticles2Html(0, articlesForPage, server, 'clanky');
  * @returns {Object} - objekt articles  with nav bar buttons
  */
 
-function addNavBtInfo(articles, startIndex){
-    if(startIndex>0) {
+function addNavBtInfo(articles, startIndex) {
+    if (startIndex > 0) {
         articles.prev = {
-            from:  (startIndex - articlesForPage > 0 ? startIndex - articlesForPage : 0),
+            from: (startIndex - articlesForPage > 0 ? startIndex - articlesForPage : 0),
         };
     }
-    if(startIndex+articlesForPage<articles.meta.totalCount){
-        articles.nxt={
-            from:  startIndex+articlesForPage,
+    if (startIndex + articlesForPage < articles.meta.totalCount) {
+        articles.nxt = {
+            from: startIndex + articlesForPage,
         };
     }
 }
@@ -32,7 +33,7 @@ function addNavBtInfo(articles, startIndex){
  * @param server - name of server where articles sit.
  * @param articlesElmId - Id of element where articles will be writen
  */
-function writeArticles2Html(startIndex, max, server, articlesElmId){
+function writeArticles2Html(startIndex, max, server, articlesElmId) {
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
             var uid = user.uid;
@@ -42,28 +43,28 @@ function writeArticles2Html(startIndex, max, server, articlesElmId){
 
             var database = firebase.database();
             var refUser = database.ref('users').child(uid).child("userInfo");
-            refUser.once("value", function(snapshot) {
-                snapshot.forEach(function(child) {
-                    if(child.key === "userName"){
-                        console.log(child.key+": "+child.val());
+            refUser.once("value", function (snapshot) {
+                snapshot.forEach(function (child) {
+                    if (child.key === "userName") {
+                        console.log(child.key + ": " + child.val());
                         userName = child.val();
 
                         //actual getting of articles
                         $.ajax({
                             type: 'GET',
-                            url: "http://"+server+"/api/article?author="+userName,
-                            data: { max: max, offset: startIndex },
+                            url: "http://" + server + "/api/article?author=" + userName,
+                            data: {max: max, offset: startIndex},
                             dataType: "json",
                             success: function (articles) {
-                                addNavBtInfo(articles,startIndex);
+                                addNavBtInfo(articles, startIndex);
                                 $.get("templates/listOfArticles.mst",
                                     function (template) {
-                                        $("#"+articlesElmId).html(Mustache.render(template, articles));
+                                        $("#" + articlesElmId).html(Mustache.render(template, articles));
                                     }
-                                    ,"text");
+                                    , "text");
                             },
-                            error:function(jxhr){
-                                errorAlert("Loading of articles failed.",jxhr);
+                            error: function (jxhr) {
+                                errorAlert("Loading of articles failed.", jxhr);
                             }
                         });
                     }
@@ -73,4 +74,18 @@ function writeArticles2Html(startIndex, max, server, articlesElmId){
             window.location.href = "login.html";
         }
     });
+}
+
+
+function forwardArticles() {
+    startIndex += 1;
+    writeArticles2Html(startIndex, articlesForPage, server, 'clanky');
+}
+
+
+function backwardArticles() {
+    if (startIndex > 0) {
+        startIndex -= 1;
+        writeArticles2Html(startIndex, articlesForPage, server, 'clanky');
+    }
 }

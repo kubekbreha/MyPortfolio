@@ -1,9 +1,9 @@
 function searchArticle() {
     var nameValue = document.getElementById("search").value;
-    writeArticles2Html(0, articlesForPage, server, 'clanky', nameValue);
+    writeArticles2HtmlSearch(0, articlesForPage, server, 'clanky', nameValue);
 }
 
-function writeArticles2Html(startIndex, max, server, articlesElmId, search){
+function writeArticles2HtmlSearch(startIndex, max, server, articlesElmId, search){
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
             var uid = user.uid;

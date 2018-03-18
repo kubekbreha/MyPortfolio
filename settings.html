@@ -73,6 +73,15 @@
     </form>
 </div>
 
+<!-- --------- FooterSection --------- -->
+<div id="footer-placeholder">
+</div>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+    $.get("footer.html", function (data) {
+        $("#footer-placeholder").replaceWith(data);
+    });
+</script>
 
 <!-- Firebase JS -->
 <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
@@ -89,6 +98,7 @@
     firebase.initializeApp(config);
 </script>
 <script src="js/firebase/firebase_settings.js"></script>
+<script src="js/firebase/firebase.js"></script>
 
 <!-- JavaScript -->
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>

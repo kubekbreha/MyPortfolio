@@ -1,5 +1,5 @@
 //size of articles on one page
-var articlesForPage=20;
+var articlesForPage=1;
 var commentsForPage=20;
 
 //Domain name of server with articles
