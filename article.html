@@ -51,16 +51,13 @@
         <h5 class="section-name">Add comment<span class="red-text">.</span></h5>
     </div>
 
+    <!--list of comments-->
+    <div id="komentare"></div>
 
     <form id="commentForm" method="post" action="badProcessing.html">
-        <div class="row ">
-            <label for="author">Autor:</label>
-            <input type="text" name="author" id="author" size="50"
-                   title="Autor komentaru. Maximálna dĺžka: 100 znakov."
-                   maxlength="100" placeholder="napr. Ján Trieska"/>
-        </div>
 
-        <div class="row">
+
+        <div class="row ">
             <label for="text">Názov:</label>
             <input type="text" name="text" id="text" size="50" maxlength="100" title="Your comment."
                    placeholder="What a great game!"/>
@@ -75,9 +72,14 @@
             </div>
         </div>
 
+        <div class="row  invisible">
+            <label for="author">Autor:</label>
+            <input type="text" name="author" id="author" size="50"
+                   title="Autor komentaru. Maximálna dĺžka: 100 znakov."
+                   maxlength="100" placeholder="napr. Ján Trieska"/>
+        </div>
+
     </form>
-    <!--list of comments-->
-    <div id="komentare"></div>
 </div>
 
 

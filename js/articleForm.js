@@ -65,10 +65,6 @@ $("#btCancelFileUpload").click(function(){
     $('#btShowFileUpload').removeClass("skryty");
 });
 
-
-
-
-
 window.onload = function() {
     setFirstFormElement()
 };

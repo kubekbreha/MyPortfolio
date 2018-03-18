@@ -1,6 +1,10 @@
 var $form = $("#commentForm");
 var artId = queryString2obj().id;
 
+window.onload = function() {
+    setFirstFormElement()
+};
+
 
 if (isFinite(artId)){
     $.ajax({
@@ -10,19 +14,18 @@ if (isFinite(artId)){
         success: function (comment) {
             $("#author").val(comment.author);
             $("#text").val(comment.text);
-            $("#frmTitle").html("Uprav komentár");
+            $("#frmTitle").html("Edit comment");
         },
         error:function(jxhr){
-            console.log("Načítanie komentáru na editáciu neúspešné.\nChyba: "+ jxhr.status + " (" + jxhr.statusText + ")");
+            console.log("Comment cant be loaded for editing.\nError: "+ jxhr.status + " (" + jxhr.statusText + ")");
         }
     });
 }else{
-    $("#frmTitle").html("Pridaj komentár");
+    $("#frmTitle").html("Add comment");
 }
 
-//Pridanie funkcionality pre kliknutie na tlacidlo "Ulož článok"
-$form.submit(function(event){  //tu potrebujem aj objekt s udalosťou, aby som
-    event.preventDefault(); //zrušiť pôvodné spracovanie udalosti
+$form.submit(function(event){
+    event.preventDefault();
     if (control == 0) {
         prepareAndSendComment($form,"POST","http://"+server+"/api/article/"+artId+"/comment");
     }else{
@@ -45,58 +48,45 @@ function updateCom(id){
             success: function (comment) {
                 $("#author").val(comment.author);
                 $("#text").val(comment.text);
-                $("#frmTitle").html("Uprav komentár");
+                $("#frmTitle").html("Edit comment");
             },
             error:function(jxhr){
-                console.log("Načítanie komentára na editáciu neúspešné.\nChyba: "+ jxhr.status + " (" + jxhr.statusText + ")");
+                console.log("Comment cant be loaded for editing.\nError: "+ jxhr.status + " (" + jxhr.statusText + ")");
             }
         });
     }else{
-        $("#frmTitle").html("Pridaj komentár");
+        $("#frmTitle").html("Add comment");
     }
 }
 
-/**
- * Spracuje údaje o článku z formulára a odošle na uloženie na server
- * @param $frm - formulár s článkom (jQuery objekt)
- * @param method - metóda, "POST" (pridanie článku) alebo "PUT" (úprava článku)
- * @param restURL - url zdroja na serveri
- */
 function prepareAndSendComment($frm, method, restURL) {
 
-
-    //1. Uloží údaje z formulára do objektu
     var data = {};
     $frm.serializeArray().map(
         function(item){
             var itemValueTrimmed = item.value.trim();
-            if(itemValueTrimmed){//ak je hodnota neprázdny reťazec
+            if(itemValueTrimmed){
                 data[item.name] = item.value;
             }
         }
     );
 
 
-    console.log("prepareAndSendComment> Údaje po uložení z formulára do objektu:");
+    console.log("prepareAndSendComment> Data after converting to object:");
     console.log(JSON.stringify(data));
 
-    //3.Kontrola, či boli zadané povinné polia
     if(!data.author){ //toto len pre istotu
-        alert("Autor komentára musí byť zadaný a musí obsahovať čitateľné znaky");
+        alert("Autor field cant be empty");
         return;
     }
-    if(!data.text){ //toto je dôležité, keďže na textarea sa nedá použiť pattern. Odchytí, keď používateľ do prvku content
-        //zadal iba biele znaky
-        alert("Text komentára musí byť zadaný a musí obsahovať čitateľné znaky.");
+    if(!data.text){
+        alert("Text of comment must be added");
         return;
     }
 
-    console.log("prepareAndSendComment> Povinné údaje úspešne skontrolované:");
+    console.log("prepareAndSendComment> Must fill field checked:");
 
-
-    //4. odoslanie údajov
-    if(window.confirm("Skutočne si želáte komentár zapísať do databázy?")){
-
+    if(window.confirm("Do you really wat to save this comment")){
         $.ajax({
             type: method,
             url: restURL,
@@ -110,9 +100,36 @@ function prepareAndSendComment($frm, method, restURL) {
                 }
             },
             error: function (jxhr) {
-                window.alert("Spracovanie neúspešné. Údaje neboli zapísané. Kód chyby:" + status + "\n" + jxhr.statusText + "\n" + jxhr.responseText);
+                window.alert("Processing error. Data wasn saved. Errorcode:" + status + "\n" + jxhr.statusText + "\n" + jxhr.responseText);
             }
         });
-
     }
+}
+
+
+//set user name from firebase to author form
+function setFirstFormElement() {
+    firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+            var uid = user.uid;
+            console.log(user.uid);
+
+            var userName = "";
+
+            var database = firebase.database();
+            var refUser = database.ref('users').child(uid).child("userInfo");
+            refUser.once("value", function (snapshot) {
+                snapshot.forEach(function (child) {
+                    if (child.key === "userName") {
+                        console.log(child.key + ": " + child.val());
+                        userName = child.val();
+                        document.getElementById("author").value = userName;
+                        console.log("username from form:  " + userName);
+                    }
+                });
+            });
+        } else {
+            window.location.href = "login.html";
+        }
+    });
 }
