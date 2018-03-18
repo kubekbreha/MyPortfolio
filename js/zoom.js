@@ -1,4 +1,4 @@
-var ClassNameCary = "";
+var ClassNameCary = "zoom";
 
 function zoomPage(ClassNameCary){
     var size = parseFloat(document.body.style.fontSize);
