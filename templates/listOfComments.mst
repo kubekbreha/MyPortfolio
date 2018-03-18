@@ -1,13 +1,16 @@
-    {{#comments}}
-        <div class="row">
-            <div class="col l12 s12 m12">
-                <div class="card-panel">
-                    <p>{{author}}</p>
-                    <span>{{text}}</span>
-                </div>
+{{#comments}}
+    <div class="row">
+        <div class="col l12 s12 m12">
+            <div class="card-panel">
+                <i class="material-icons right" value="deleteComment" onclick="deleteComment(commentURL+'{{id}}')">close</i>
+
+                <h5>{{author}}</h5>
+
+                <span>{{text}}</span>
             </div>
         </div>
-    {{/comments}}
+    </div>
+{{/comments}}
 
 
 

@@ -21,3 +21,25 @@ function writeComment2Html(startIndex, max, server, commentElID){
         }
     });
 }
+
+
+
+
+var commentURL ="http://"+server+"/api/comment/";
+function deleteComment(sourceURL){
+    if(window.confirm("Are you sure you want to delete this comment?")) {
+
+        $.ajax({
+            type: 'DELETE',
+            url: sourceURL,
+            success: function () {
+                window.alert("Deleted successfully");
+                window.location.href = "article.html?id="+artId;
+            },
+            error: function (jxhr) {
+                errorAlert("Delete not successfull", jxhr);
+            }
+        });
+
+    }
+}

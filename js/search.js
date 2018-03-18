@@ -3,15 +3,6 @@ function searchArticle() {
     writeArticles2Html(0, articlesForPage, server, 'clanky', nameValue);
 }
 
-
-
-/**
- * Write data about articles to element whith id articlesElmID an nav to element navElmId
- * @param startIndex - index (poradové číslo čláanku od 0)
- * @param max - max amount of articles per page.
- * @param server - name of server where articles sit.
- * @param articlesElmId - Id of element where articles will be writen
- */
 function writeArticles2Html(startIndex, max, server, articlesElmId, search){
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
