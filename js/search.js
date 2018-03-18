@@ -1,36 +1,55 @@
-$(document).ready(function(){
-    $('#searchform').submit(function(){
-        var query = '';
+function searchArticle() {
+    var nameValue = document.getElementById("search").value;
+    writeArticles2Html(0, articlesForPage, server, 'clanky', nameValue);
+}
 
-        var tag = $('input[name="search"]').val();
 
-        if(tag != ''){query += (query == '' ? '?' : '&') + 'tag=' + tag;}
 
-        if(query == ''){
-            writeArticles2Html(starter, pocetClankovNaStranu, server, 'clanky', 'navigacia');
-        }else{
-            foundArticles('clanky', 'navigacia', query);
-            /*
-            var restURL="http://"+server+"/api/article"+query;
-            console.log(restURL);
-            getJSONAllBr(restURL, function(JSONObj){rendering(JSONObj, 'clanky', 'navigacia')}, function(status){errorDialog(status)});*/
-        }
-    });
-});
+/**
+ * Write data about articles to element whith id articlesElmID an nav to element navElmId
+ * @param startIndex - index (poradové číslo čláanku od 0)
+ * @param max - max amount of articles per page.
+ * @param server - name of server where articles sit.
+ * @param articlesElmId - Id of element where articles will be writen
+ */
+function writeArticles2Html(startIndex, max, server, articlesElmId, search){
+    firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+            var uid = user.uid;
+            console.log(user.uid);
 
-function foundArticles(articleElmId, navElmId, query){
-    $.ajax({
-        type: 'GET',
-        url: "http://"+server+"/api/article"+query,
-        dataType: "json",
-        success: function (article) {
-            article.dateCreatedHr = moment(article.dateCreated).calendar();
-            article.lastUpdatedHr = moment(article.lastUpdated).calendar();
-            $("#"+articleElmId).html(Mustache.render($("#listOfArticlesMTemplate").html(), article));
-            $("#"+navElmId).html("");
-        },
-        error:function(responseObj,textStatus, errorThrown){
-            errorDialog(textStatus+"("+errorThrown+")");
+            var userName = "";
+
+            var database = firebase.database();
+            var refUser = database.ref('users').child(uid).child("userInfo");
+            refUser.once("value", function(snapshot) {
+                snapshot.forEach(function(child) {
+                    if(child.key === "userName"){
+                        console.log(child.key+": "+child.val());
+                        userName = child.val();
+
+                        //actual getting of articles
+                        $.ajax({
+                            type: 'GET',
+                            url: "http://"+server+"/api/article?author="+userName+"&title="+search,
+                            data: { max: max, offset: startIndex },
+                            dataType: "json",
+                            success: function (articles) {
+                                $.get("templates/listOfArticles.mst",
+                                    function (template) {
+                                        $("#"+articlesElmId).html(Mustache.render(template, articles));
+                                    }
+                                    ,"text");
+                            },
+                            error:function(jxhr){
+                                errorAlert("Loading of articles failed.",jxhr);
+                            }
+                        });
+                    }
+                });
+            });
+        } else {
+            window.location.href = "login.html";
         }
     });
 }

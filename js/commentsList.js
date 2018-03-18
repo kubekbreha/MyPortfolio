@@ -3,7 +3,6 @@ var artId = queryString2obj().id;
 
 writeComment2Html(0, commentsForPage, server, 'komentare');
 
-
 function writeComment2Html(startIndex, max, server, commentElID){
     $.ajax({
         type: 'GET',

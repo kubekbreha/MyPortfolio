@@ -1,15 +1,13 @@
-<div class="container">
     {{#comments}}
         <div class="row">
-            <div class="col l6 s12 m12">
+            <div class="col l12 s12 m12">
                 <div class="card-panel">
                     <p>{{author}}</p>
-                    <span class="white-text">{{text}}</span>
+                    <span>{{text}}</span>
                 </div>
             </div>
         </div>
     {{/comments}}
-</div>
 
 
 
