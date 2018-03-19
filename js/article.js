@@ -1,6 +1,7 @@
 var artId = queryString2obj().id;
 var restURL ="http://"+server+"/api/article/"+artId;
 
+
 writeArticle2Html(restURL,"article",artId);
 
 $("#btArtList").click(function(){

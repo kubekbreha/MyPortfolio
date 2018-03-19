@@ -41,7 +41,10 @@
             </div>
 
             <div class="col xl12 l12 m12 s12 center image_size">
-                    <img class="" src="{{imageLink}}" alt="{{imageLink}}">
+                    <script>$(document).ready(function(){
+                                $('.materialboxed').materialbox();
+                            });</script>
+                    <img class="materialboxed" src="{{imageLink}}" alt="{{imageLink}}">
             </div>
 
         </div>
