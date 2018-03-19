@@ -11,5 +11,6 @@
     <orderEntry type="library" name="mustache" level="application" />
     <orderEntry type="library" name="jquery-2.2.4" level="application" />
     <orderEntry type="library" name="authedmine" level="application" />
+    <orderEntry type="library" name="platform" level="application" />
   </component>
 </module>

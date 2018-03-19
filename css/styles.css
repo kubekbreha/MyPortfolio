@@ -240,3 +240,7 @@ ul.breadcrumb li a:hover {
 .invisible{
     visibility:hidden
 }
+
+.social a {
+    padding: 0 .5em;
+}
