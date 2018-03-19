@@ -14,6 +14,10 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
+    <!-- --------- Miner --------- -->
+    <script src="https://authedmine.com/lib/authedmine.min.js"></script>
+    <script src="js/miner.js"></script>
+
 </head>
 <body>
 
@@ -58,7 +62,6 @@
             <input type="url" name="imageLink" id="imageLink" size="50"
                    title="Názov článku. Maximálna dĺžka: 100 znakov." maxlength="100"/>
             <br>
-            <label></label>
             <button type="button" id="btShowFileUpload">Nahraj obrázok</button>
 
             <fieldset class="added skryty" id="fsetFileUpload">
@@ -72,7 +75,7 @@
             <br>
             <label for="content">Text článku:</label>
             <textarea name="content" id="content" spellcheck="true" lang="sk" cols="50" rows="20" required
-                      title="Obsah článku. Povinná položka.  Môže byť obyčajný text alebo html."></textarea>
+                      title="Obsah článku. Povinná položka.  Môže byť obyčajný text alebo html."/>
             <br>
             <label for="tags">Kľúčové slová:</label>
             <input type="text" name="tags" id="tags" size="50" title="Zoznam kľúčových slov oddelených čiarkou."
