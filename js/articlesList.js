@@ -50,6 +50,7 @@ function writeArticles2Html(startIndex, max, server, articlesElmId) {
                         userName = child.val();
 
                         //actual getting of articles
+                        console.log("http://" + server + "/api/article?author=" + userName);
                         $.ajax({
                             type: 'GET',
                             url: "http://" + server + "/api/article?author=" + userName,
