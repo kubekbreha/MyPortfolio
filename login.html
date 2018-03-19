@@ -28,7 +28,7 @@
         <h1>LogIn<span class="green-text">.</span></h1>
         <div class="section"></div>
 
-        <p class="black-text" id="error_message"></p>
+        <p class="black-text" id="error_message"/>
 
         <div class="row">
             <div class="input-field col s12">
@@ -49,9 +49,11 @@
         <div class="row">
             <a onclick="callGoogleSignIn()" class="hoverable waves-effect waves-light btn red social-margin">Google</a>
             <a onclick="callFacebookSignIn()" class="hoverable waves-effect waves-light btn blue accent-3 social-margin">Facebook</a>
-            <a onclick="logIn()" class="hoverable black waves-effect waves-light btn social-margin">login</a>
-
         </div>
+        <div>
+            <a onclick="logIn()" class="hoverable black waves-effect waves-light btn social-margin">login</a>
+        </div>
+
         <label>
             <b onclick="openRegister()" style="color: black;">Register</b>
         </label>
@@ -77,10 +79,11 @@
     };
     firebase.initializeApp(config);
 </script>
-
-<script src="js/firebase/firebase_login.js"></script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="js/firebase/firebase_login.js"></script>
+
 </body>
 
 
