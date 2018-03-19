@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var url = window.location.href;
     var title = document.title;
     var subject = "Read this good article";
-    var via = "bootstrapC";
+    var via = "";
     console.log( url );
     console.log( title );
 
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 //facebook
     $('#share-fb').attr('data-url', url).attr('data-sharer', 'facebook');
 //twitter
-    $('#share-tw').attr('data-url', url).attr('data-title', title).attr('data-via', via).attr('data-sharer', 'twitter');
+    $('#share-tw').attr('data-url', url).attr('data-title', "Check this awesome page ").attr('data-via', via).attr('data-sharer', 'twitter');
 //linkedin
     $('#share-li').attr('data-url', url).attr('data-sharer', 'linkedin');
 // google plus
@@ -25,6 +25,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
     $( ".sharer button" ).click(function() {
         event.preventDefault();
     });
-
-
 });
