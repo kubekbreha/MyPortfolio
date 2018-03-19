@@ -130,11 +130,13 @@ function prepareAndSendArticle($frm, method, restURL) {
 
     //3.Check if needed forms was filled
     if(!data.title){
-        alert("Article name must be filled");
+        Materialize.toast('Article name must be filled', 4000);
+        // alert("Article name must be filled");
         return;
     }
     if(!data.content){
-        alert("Text of article must be filled");
+        Materialize.toast('Text of article must be filled', 4000);
+        //alert("Text of article must be filled");
         return;
     }
 
@@ -157,7 +159,8 @@ function prepareAndSendArticle($frm, method, restURL) {
                 }
             },
             error: function (jxhr) {
-                window.alert("Processing failed. Data was not saved. Error code:" + status + "\n" + jxhr.statusText + "\n" + jxhr.responseText);
+                Materialize.toast("Processing failed. Data was not saved. Error code:" + status + "\n" + jxhr.statusText + "\n" + jxhr.responseText, 4000);
+                //window.alert("Processing failed. Data was not saved. Error code:" + status + "\n" + jxhr.statusText + "\n" + jxhr.responseText);
             }
         });
 
@@ -185,10 +188,12 @@ function uploadImg($imgLinkElement,$fieldsetElement, $btShowFileUploadElement, f
                 }
             },
             error: function (jxhr) {
-                window.alert("Processing failed. Picture was not saved. Error code:" + status + "\n" + jxhr.statusText + "\n" + jxhr.responseText);
+                Materialize.toast("Processing failed. Picture was not saved. Error code:" + status + "\n" + jxhr.statusText + "\n" + jxhr.responseText, 4000);
+                //window.alert("Processing failed. Picture was not saved. Error code:" + status + "\n" + jxhr.statusText + "\n" + jxhr.responseText);
             }
         });
     }else{
+        Materialize.toast("Pick picture file", 4000);
         window.alert("Pick picture file");
     }
 }

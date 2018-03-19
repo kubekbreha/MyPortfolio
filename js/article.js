@@ -36,7 +36,8 @@ function writeArticle2Html(sourceURL,articleElmId, articleId){
                     ,"text")
             },
             error:function(jxhr){
-                errorAlert("Loading of article failed",jxhr);
+                Materialize.toast('Loading of article failed', 4000);
+                // errorAlert("Loading of article failed",jxhr);
             }
         });
     }
@@ -53,11 +54,13 @@ function deleteArticle(sourceURL){
             type: 'DELETE',
             url: sourceURL,
             success: function () {
-                window.alert("Project was deleted");
+                Materialize.toast('Project was deleted', 4000);
+                // window.alert("Project was deleted");
                 window.location.href = "index.html";
             },
             error: function (jxhr) {
-                errorAlert("Deleting failed.",jxhr);
+                Materialize.toast('Deleting failed', 4000);
+                // errorAlert("Deleting failed.",jxhr);
             }
         });
 

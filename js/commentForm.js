@@ -17,6 +17,7 @@ if (isFinite(artId)){
             $("#frmTitle").html("Edit comment");
         },
         error:function(jxhr){
+            Materialize.toast("Comment cant be loaded for editing.\nError: "+ jxhr.status + " (" + jxhr.statusText + ")", 4000);
             console.log("Comment cant be loaded for editing.\nError: "+ jxhr.status + " (" + jxhr.statusText + ")");
         }
     });
@@ -51,6 +52,7 @@ function updateCom(id){
                 $("#frmTitle").html("Edit comment");
             },
             error:function(jxhr){
+                Materialize.toast("Comment cant be loaded for editing.\nError: "+ jxhr.status + " (" + jxhr.statusText + ")", 4000);
                 console.log("Comment cant be loaded for editing.\nError: "+ jxhr.status + " (" + jxhr.statusText + ")");
             }
         });
@@ -76,15 +78,20 @@ function prepareAndSendComment($frm, method, restURL) {
     console.log(JSON.stringify(data));
 
     if(!data.author){ //toto len pre istotu
-        alert("Autor field cant be empty");
+        Materialize.toast('Autor field cant be empty', 4000);
+        // alert("Autor field cant be empty");
         return;
     }
     if(!data.text){
-        alert("Text of comment must be added");
+        Materialize.toast('Text of comment must be added', 4000);
+        //alert("Text of comment must be added");
         return;
     }
 
     console.log("prepareAndSendComment> Must fill field checked:");
+
+
+
 
     if(window.confirm("Do you really wat to save this comment")){
         $.ajax({
@@ -100,7 +107,8 @@ function prepareAndSendComment($frm, method, restURL) {
                 }
             },
             error: function (jxhr) {
-                window.alert("Processing error. Data wasn saved. Errorcode:" + status + "\n" + jxhr.statusText + "\n" + jxhr.responseText);
+                Materialize.toast("Processing error. Data wasn saved. Errorcode:" + status + "\n" + jxhr.statusText + "\n" + jxhr.responseText, 4000);
+                //window.alert("Processing error. Data wasn saved. Errorcode:" + status + "\n" + jxhr.statusText + "\n" + jxhr.responseText);
             }
         });
     }

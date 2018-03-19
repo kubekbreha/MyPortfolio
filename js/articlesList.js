@@ -1,3 +1,4 @@
+//Materialize.toast('Downloading articles', 3000);
 console.log("Downloading articles ...");
 
 var startIndex = 0;
@@ -65,7 +66,8 @@ function writeArticles2Html(startIndex, max, server, articlesElmId) {
                                     , "text");
                             },
                             error: function (jxhr) {
-                                errorAlert("Loading of articles failed.", jxhr);
+                                Materialize.toast('Loading articles failed.', 3000);
+                                // errorAlert("Loading of articles failed.", jxhr);
                             }
                         });
                     }
