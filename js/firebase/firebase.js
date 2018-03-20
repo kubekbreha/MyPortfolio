@@ -43,3 +43,13 @@ function openPage(url){
         window.location.href = url + "?" + matches[0] ;
     }
 }
+
+
+function openPageArticle(url){
+    if(logged){
+        window.location.href = url;
+    }else{
+        var userName = document.getElementById('user-name-template').textContent;
+        window.location.href = url + "?" + userName ;
+    }
+}

@@ -4,7 +4,7 @@
             <div class="card-panel grey lighten-2">
                 <i class="material-icons right" value="deleteComment" onclick="deleteComment(commentURL+'{{id}}')">close</i>
 
-                <h5>{{author}}</h5>
+                <h5>{{author}}  ({{dateCreated}})</h5>
 
                 <span>{{text}}</span>
             </div>
