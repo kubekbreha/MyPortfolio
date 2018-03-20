@@ -74,7 +74,32 @@ function writeArticles2Html(startIndex, max, server, articlesElmId) {
                 });
             });
         } else {
-            // window.location.href = "login.html";
+            var userURL = window.location.href;
+            var reg = /[^?]*$/g;
+            var matches = userURL.match(reg);
+            console.log("This is url matched: " + matches[0]);
+
+
+            //actual getting of articles
+            console.log("http://" + server + "/api/article?author=" + matches[0]);
+            $.ajax({
+                type: 'GET',
+                url: "http://" + server + "/api/article?author=" + matches[0],
+                data: {max: max, offset: startIndex},
+                dataType: "json",
+                success: function (articles) {
+                    addNavBtInfo(articles, startIndex);
+                    $.get("templates/listOfArticles.mst",
+                        function (template) {
+                            $("#" + articlesElmId).html(Mustache.render(template, articles));
+                        }
+                        , "text");
+                },
+                error: function (jxhr) {
+                    Materialize.toast('Loading articles failed.', 3000);
+                    // errorAlert("Loading of articles failed.", jxhr);
+                }
+            });
         }
     });
 }
