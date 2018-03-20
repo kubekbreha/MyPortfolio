@@ -39,7 +39,7 @@
 <main>
     <div id="article"></div>
     <br><br><br><br>
-    <div id="article-buttons" class="container">
+    <div id="log-out-invisible-article-buttons" class="container ">
         <div class="row">
             <div>
                 <!--<a id="btArtList" class="waves-effect waves-light btn">Projects</a>-->
@@ -53,21 +53,24 @@
 </main>
 
 <!-- --------- CommentSection --------- -->
-<div class="container">
+<div id="log-out-invisible-comments" class="container ">
     <hr>
     <div class="row">
-        <h5 id="invisivle-comment" class="section-name">Add comment<span class="red-text">.</span></h5>
+        <h5 class="section-name">Add comment<span class="red-text">.</span></h5>
     </div>
 
     <!--list of comments-->
     <div id="komentare"></div>
 
     <form id="commentForm" method="post" action="badProcessing.html">
+
+
         <div class="row ">
             <label for="text">Názov:</label>
             <input type="text" name="text" id="text" size="50" maxlength="100" title="Your comment."
                    placeholder="What a great game!"/>
         </div>
+
 
         <div class="row">
             <div class="col s12">
@@ -83,6 +86,7 @@
                    title="Autor komentaru. Maximálna dĺžka: 100 znakov."
                    maxlength="100" placeholder="napr. Ján Trieska"/>
         </div>
+
     </form>
 </div>
 
@@ -113,7 +117,6 @@
     };
     firebase.initializeApp(config);
 </script>
-
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
@@ -127,6 +130,7 @@
 <script src="js/commentForm.js"></script>
 <script src="js/firebase/firebase.js"></script>
 <script src="js/commentsList.js"></script>
+
 
 </body>
 </html>

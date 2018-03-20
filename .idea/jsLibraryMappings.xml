@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{authedmine, jquery-2.2.4, mustache, platform}" />
+    <file url="PROJECT" libraries="{authedmine, jquery-2.2.4, mustache, page, platform, require, sharer}" />
   </component>
 </project>

@@ -74,7 +74,7 @@ function writeArticles2Html(startIndex, max, server, articlesElmId) {
                 });
             });
         } else {
-            //window.location.href = "login.html";
+            // window.location.href = "login.html";
         }
     });
 }

@@ -12,5 +12,8 @@
     <orderEntry type="library" name="jquery-2.2.4" level="application" />
     <orderEntry type="library" name="authedmine" level="application" />
     <orderEntry type="library" name="platform" level="application" />
+    <orderEntry type="library" name="sharer" level="application" />
+    <orderEntry type="library" name="page" level="application" />
+    <orderEntry type="library" name="require" level="application" />
   </component>
 </module>

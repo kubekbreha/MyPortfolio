@@ -1,10 +1,11 @@
-awwwwfirebase.auth().onAuthStateChanged(function (user) {
+//check if user is logged
+firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
+
     } else {
         window.location.href = "index.html";
     }
 });
-
 
 
 //-------------------------------push data of article to database-------------------------------
@@ -23,11 +24,12 @@ function setUserData() {
         userEmail: authorEmail
     };
 
-    refUser.set(userData, function(error) {
-        if (error) {
-            Materialize.toast("Data could not be saved." + error, 4000);
-        } else {
-            window.location.href = "index.html";
-        }
+    console.log("set user data");
+
+    refUser.set(userData).then(function onSuccess(res) {
+        window.location.href = "index.html";
+    }).catch(function onError(err) {
+        Materialize.toast("Data wasnt set.", 4000);
     });
+
 }

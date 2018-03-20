@@ -10,10 +10,10 @@
                 <span class="black-text text-lighten-2">menu</span></i>
             </a>
 
-            <ul class="right hide-on-med-and-down ">
+            <ul class="right hide-on-med-and-down" >
                 <li><a href="index.html"><span class="black-text text-lighten-2">About</span></a></li>
                 <li><a href="projects.html"><span class="black-text text-lighten-2">Projects</span></a></li>
-                <li ><a  onclick="logout()" id="logInOut-nav"><span  class="black-text text-lighten-2">Log</span></a></li>
+                <li><a onclick="logOutOrIn()"><span id="log-nav" class="black-text text-lighten-2"></span></a></li>
             </ul>
         </div>
     </nav>
@@ -22,9 +22,10 @@
     <ul class="side-nav" id="mobile-demo">
         <li><a href="index.html"><span class="black-text text-lighten-2">About</span></a></li>
         <li><a href="projects.html"><span class="black-text text-lighten-2">Projects</span></a></li>
-        <li><a  id="logInOut-side-nav" onclick="logout()"><span  class="black-text text-lighten-2">Log</span></a></li>
+        <li><a onclick="logOutOrIn()"><span id="log-side-nav" class="black-text text-lighten-2"></span></a></li>
     </ul>
 </div>
 
+<script src="js/firebase/firebase.js"></script>
 <script src="js/navigation_scripts.js"></script>
 <script src="js/libs/materialize.js"></script>

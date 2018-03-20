@@ -1,6 +1,7 @@
 var $form = $("#SKorFrm");
 var artId = queryString2obj().id;
 
+
 if (isFinite(artId)){
     console.log("edit article "+artId);
 
@@ -90,7 +91,7 @@ function setFirstFormElement() {
                 });
             });
         } else {
-            //window.location.href = "login.html";
+            // window.location.href = "login.html";
         }
     });
 }
@@ -154,7 +155,6 @@ function prepareAndSendArticle($frm, method, restURL) {
             success: function (response) {
                 if(response.id){
                     console.log(response.id);
-
                     window.location.href="article.html?id="+response.id;
                 }
             },
