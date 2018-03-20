@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+
+    <meta name="viewport" content="width-device-width, initial-scale- 1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- CSS -->
+    <!-- --------- CSS --------- -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link rel="stylesheet" href="css/admin_login_style.css">
-    <link rel="stylesheet" href="css/social_icons.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
@@ -16,38 +15,17 @@
     <script src="https://authedmine.com/lib/authedmine.min.js"></script>
     <script src="js/miner.js"></script>
 
-    <title>Add Article</title>
+
+    <title>Settings</title>
 </head>
 
 <body>
-
-<!-- --------- NavigationSection --------- -->
-<div id="nav-placeholder">
-</div>
-<script src="//code.jquery.com/jquery.min.js"></script>
-<script>
-    $.get("navigation.html", function (data) {
-        $("#nav-placeholder").replaceWith(data);
-    });
-</script>
-
-
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col 18 s12 white-text ">
-                <h3><span class="center black-text text-lighten-2 ">Profile setup<span
-                        class="green-text">.</span></span></h3>
-            </div>
-        </div>
-    </div>
-</header>
-
-
-<!-- Forms section -->
-<div class="container">
-    <form class="col ">
-
+<main class="center">
+    <div class="z-depth-3 y-depth-3 x-depth-3 grey lighten-4 row"
+         style="display: inline-block; width: 50%;
+          padding: 20px 2% 0px 2%; border: 1px; margin-top: 100px; ">
+        <h1>Settings<span class="green-text">.</span></h1>
+        <div class="section"></div>
 
         <div class="row">
             <div class="input-field col l6 s12">
@@ -74,20 +52,14 @@
             </div>
         </div>
 
-    </form>
-</div>
+        <div class="section"></div>
+    </div>
+</main>
+<br>
+<br>
+<br>
 
-<!-- --------- FooterSection --------- -->
-<div id="footer-placeholder">
-</div>
-<script src="//code.jquery.com/jquery.min.js"></script>
-<script>
-    $.get("footer.html", function (data) {
-        $("#footer-placeholder").replaceWith(data);
-    });
-</script>
-
-<!-- Firebase JS -->
+<!-- --------- Firebase --------- -->
 <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
 <script>
     // Initialize Firebase
@@ -101,13 +73,15 @@
     };
     firebase.initializeApp(config);
 </script>
-<script src="js/firebase/firebase_settings.js"></script>
-<script src="js/firebase/firebase.js"></script>
 
-<!-- JavaScript -->
+
+
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="js/firebase/firebase_settings.js"></script>
+
 </body>
+
 
 </html>

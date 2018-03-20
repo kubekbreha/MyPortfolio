@@ -40,7 +40,7 @@ function writeArticles2HtmlSearch(startIndex, max, server, articlesElmId, search
                 });
             });
         } else {
-            window.location.href = "login.html";
+            //window.location.href = "login.html";
         }
     });
 }

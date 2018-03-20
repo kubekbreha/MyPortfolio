@@ -1,7 +1,7 @@
 awwwwfirebase.auth().onAuthStateChanged(function (user) {
     if (user) {
     } else {
-        window.location.href = "login.html";
+        window.location.href = "index.html";
     }
 });
 
@@ -23,5 +23,11 @@ function setUserData() {
         userEmail: authorEmail
     };
 
-    refUser.set(userData);
+    refUser.set(userData, function(error) {
+        if (error) {
+            Materialize.toast("Data could not be saved." + error, 4000);
+        } else {
+            window.location.href = "index.html";
+        }
+    });
 }

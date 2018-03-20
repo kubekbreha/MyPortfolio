@@ -1,0 +1,237 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.force-mobile {
+    width: 750px;
+    max-width: 750px;
+    height: 1334px;
+    margin: 0 auto;
+    border-style: none;
+    border-color: inherit;
+    border-width: 0px;
+    -webkit-transform: scale(0.5);
+    -webkit-transform-origin: 0 0;
+    display: block;
+}
+
+::selection {
+    background: #f44336; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+    background: #f44336; /* Gecko Browsers */
+}
+
+p {
+    font-family: 'Roboto Slab', serif;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Roboto Slab', serif;
+}
+
+h5 {
+    font-family: 'Roboto Slab', serif;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.logo {
+    padding-left: 16px;
+}
+
+.thin-text {
+    font-weight: 300;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.section-name {
+    padding-left: 16px;
+}
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.header {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+
+.image_size img {
+    height: 100%;
+    width: 75%;
+}
+
+.video_size video {
+    height: 100%;
+    width: 320px;
+}
+
+.video_size_profile img {
+    height: 50%;
+    width: 50%;
+}
+
+
+.image_size_screenshot img {
+    height: 100%;
+    width: 75%;
+}
+
+.article_name_font {
+    font-size: 42pt;
+}
+
+
+/*--------------------------------formular colors------------------------------*/
+/* label color */
+.input-field label {
+    color: #000;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #000;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+/* valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #000;
+}
+
+
+
+
+/* label focus color */
+.input-field input:focus + label {
+    color: red !important;
+}
+/* label underline focus color */
+.row .input-field input:focus {
+    border-bottom: 1px solid red !important;
+    box-shadow: 0 1px 0 0 red !important
+}
+
+.input-field textarea:focus + label {
+    color: red !important;
+}
+
+.row .input-field textarea:focus {
+    border-bottom: 1px solid red !important;
+    box-shadow: 0 1px 0 0 red !important
+}
+
+
+
+.input-field filepath:focus + label {
+    color: red !important;
+}
+
+.row .input-field filepath:focus {
+    border-bottom: 1px solid red !important;
+    box-shadow: 0 1px 0 0 red !important
+}
+
+
+.btn{
+    background-color: red;
+}
+.btn:visited{
+    background-color: red;
+}
+.btn:hover {
+    background-color: red;
+}
+.btn:active{
+    background-color: red;
+}
+
+
+
+.btn-large-admin{
+    background-color: red;
+    width: 26%;
+}
+.btn-large-admin:visited{
+    background-color: red;
+    width: 26%;
+}
+.btn-large-admin:hover {
+    background-color: red;
+    width: 26%;
+}
+.btn-large-admin:active{
+    background-color: red;
+    width: 26%;
+}
+
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #000;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: white;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+    color: black;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: red;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: black;
+    text-decoration: underline;
+}
