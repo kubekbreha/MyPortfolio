@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e08cbf4a-909d-4db0-b79c-4c61004de246" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change beforePath="$PROJECT_DIR$/js/articlesList.js" afterPath="$PROJECT_DIR$/js/articlesList.js" />
-      <change beforePath="$PROJECT_DIR$/js/firebase/firebase.js" afterPath="$PROJECT_DIR$/js/firebase/firebase.js" />
-      <change beforePath="$PROJECT_DIR$/navigation.html" afterPath="$PROJECT_DIR$/navigation.html" />
+      <change beforePath="$PROJECT_DIR$/js/common/settings.js" afterPath="$PROJECT_DIR$/js/common/settings.js" />
+      <change beforePath="$PROJECT_DIR$/js/miner.js" afterPath="$PROJECT_DIR$/js/miner.js" />
       <change beforePath="$PROJECT_DIR$/templates/article.mst" afterPath="$PROJECT_DIR$/templates/article.mst" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,7 +18,48 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="article.mst" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/article.mst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="62" lean-forward="false" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/common/settings.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="article.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/article.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="articlesList.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/articlesList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="627">
+              <caret line="115" column="23" lean-forward="false" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -79,7 +118,6 @@
         <option value="$PROJECT_DIR$/js/zoom.js" />
         <option value="$PROJECT_DIR$/js/visual_materialize.js" />
         <option value="$PROJECT_DIR$/contact.html" />
-        <option value="$PROJECT_DIR$/js/common/settings.js" />
         <option value="$PROJECT_DIR$/templates/listOfArticles.mst" />
         <option value="$PROJECT_DIR$/js/shareSocial.js" />
         <option value="$PROJECT_DIR$/css/sicialFloating.css" />
@@ -88,7 +126,6 @@
         <option value="$PROJECT_DIR$/templates/listOfComments.mst" />
         <option value="$PROJECT_DIR$/footer.html" />
         <option value="$PROJECT_DIR$/js/article.js" />
-        <option value="$PROJECT_DIR$/js/miner.js" />
         <option value="$PROJECT_DIR$/js/firebase/firebase_login.js" />
         <option value="$PROJECT_DIR$/js/articleForm.js" />
         <option value="$PROJECT_DIR$/js/commentForm.js" />
@@ -107,9 +144,11 @@
         <option value="$PROJECT_DIR$/js/router.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/firebase/firebase.js" />
-        <option value="$PROJECT_DIR$/js/articlesList.js" />
         <option value="$PROJECT_DIR$/navigation.html" />
+        <option value="$PROJECT_DIR$/js/miner.js" />
         <option value="$PROJECT_DIR$/templates/article.mst" />
+        <option value="$PROJECT_DIR$/js/common/settings.js" />
+        <option value="$PROJECT_DIR$/js/articlesList.js" />
       </list>
     </option>
   </component>
@@ -119,9 +158,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="254" />
-    <option name="y" value="-27" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="394" />
+    <option name="y" value="270" />
     <option name="width" value="1303" />
     <option name="height" value="1042" />
   </component>
@@ -277,17 +316,18 @@
       <workItem from="1521440394944" duration="22300000" />
       <workItem from="1521481034664" duration="6581000" />
       <workItem from="1521497178825" duration="3017000" />
-      <workItem from="1521532328581" duration="4906000" />
+      <workItem from="1521532328581" duration="6337000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102065000" />
+    <option name="totallyTimeSpent" value="103496000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1060" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16354166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16354166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -403,26 +443,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/common/settings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/firebase/firebase_login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/articleForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="94" column="9" lean-forward="true" selection-start-line="94" selection-start-column="9" selection-end-line="94" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -431,13 +455,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/miner.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -503,6 +520,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="655">
           <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -524,6 +542,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="710">
           <caret line="83" column="27" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -531,6 +550,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
           <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -538,6 +558,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="606">
           <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -564,14 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/article.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/article.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2629">
@@ -580,26 +593,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/articlesList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="921">
-          <caret line="99" column="37" lean-forward="true" selection-start-line="99" selection-start-column="37" selection-end-line="99" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/firebase/firebase.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/article.mst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="61" lean-forward="false" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
           <folding />
         </state>
       </provider>
@@ -616,6 +613,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="542">
           <caret line="59" column="75" lean-forward="false" selection-start-line="59" selection-start-column="75" selection-end-line="59" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/miner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/articleForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/article.mst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="62" lean-forward="false" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/common/settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/article.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/articlesList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="115" column="23" lean-forward="false" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="23" />
           <folding />
         </state>
       </provider>

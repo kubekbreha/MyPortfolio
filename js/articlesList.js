@@ -106,14 +106,14 @@ function writeArticles2Html(startIndex, max, server, articlesElmId) {
 
 
 function forwardArticles() {
-    startIndex += 1;
+    startIndex += 5;
     writeArticles2Html(startIndex, articlesForPage, server, 'clanky');
 }
 
 
 function backwardArticles() {
     if (startIndex > 0) {
-        startIndex -= 1;
+        startIndex -= 5;
         writeArticles2Html(startIndex, articlesForPage, server, 'clanky');
     }
 }
