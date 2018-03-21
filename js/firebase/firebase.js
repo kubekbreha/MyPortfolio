@@ -4,18 +4,17 @@ var logged;
 firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
         logged = true;
-        document.getElementById("log-nav").textContent = "LogOut";
-        document.getElementById("log-side-nav").textContent = "LogOut";
-        document.getElementById("log-out-invisible-add-project").style.visibility = "visible";
-        document.getElementById("log-out-invisible-article-buttons").style.visibility = "visible";
-        document.getElementById("log-out-invisible-comments").style.visibility = "visible";
-    } else {
-        logged = false;
         document.getElementById("log-nav").textContent = "LogIn";
         document.getElementById("log-side-nav").textContent = "LogIn";
-        document.getElementById("log-out-invisible-add-project").style.visibility = "hidden";
-        document.getElementById("log-out-invisible-article-buttons").style.visibility = "hidden";
-        document.getElementById("log-out-invisible-comments").style.visibility = "hidden";
+        document.getElementById("log-out-invisible-add-project").style.display = "block";
+        Materialize.toast("Logged", 4000);
+    } else {
+        logged = false;
+        document.getElementById("log-nav").textContent = "LogOut";
+        document.getElementById("log-side-nav").textContent = "LogOut";
+        document.getElementById("log-out-invisible-add-project").style.display = "none";
+        Materialize.toast("NotLogged", 4000);
+
     }
 });
 

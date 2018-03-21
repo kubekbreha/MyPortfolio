@@ -1,6 +1,19 @@
 var artId = queryString2obj().id;
 var restURL ="http://"+server+"/api/article/"+artId;
 
+firebase.auth().onAuthStateChanged(function (user) {
+    if (user) {
+        document.getElementById("log-out-invisible-comments-article").style.display = "block";
+        document.getElementById("buutons-article-hide").style.display = "block";
+        // document.getElementById("btDelete").style.visibility = "block";
+    } else {
+        document.getElementById("log-out-invisible-comments-article").style.display = "none";
+        document.getElementById("buutons-article-hide").style.display = "none";
+        // document.getElementById("btDelete").style.visibility = "none";
+    }
+});
+
+
 
 writeArticle2Html(restURL,"article",artId);
 

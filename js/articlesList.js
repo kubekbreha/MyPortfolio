@@ -3,6 +3,18 @@ console.log("Downloading articles ...");
 
 var startIndex = 0;
 
+
+firebase.auth().onAuthStateChanged(function (user) {
+    if (user) {
+        document.getElementById("log-out-invisible-add-project").style.display = "block";
+    } else {
+        logged = false;
+        document.getElementById("log-out-invisible-add-project").style.display = "none";
+
+    }
+});
+
+
 writeArticles2Html(0, articlesForPage, server, 'clanky');
 
 

@@ -7,14 +7,14 @@
     <meta name="viewport" content="width-device-width, initial-scale- 1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- --------- CSS --------- -->
+    <!-- -------- CSS -------- -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/social_icons.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
-    <!-- --------- Miner --------- -->
+    <!-- -------- Miner -------- -->
     <script src="https://authedmine.com/lib/authedmine.min.js"></script>
     <script src="js/miner.js"></script>
 
@@ -25,7 +25,7 @@
 
 
 
-<!-- --------- NavigationSection --------- -->
+<!-- -------- NavigationSection -------- -->
 <div id="nav-placeholder">
 </div>
 <script src="//code.jquery.com/jquery.min.js"></script>
@@ -35,13 +35,13 @@
     });
 </script>
 
-<!-- --------- ConntentSection --------- -->
+<!-- -------- ConntentSection -------- -->
 <main>
     <div id="article"></div>
     <br><br><br><br>
-    <div id="log-out-invisible-article-buttons" class="container ">
+    <div  class="container ">
         <div class="row">
-            <div>
+            <div id="buutons-article-hide">
                 <!--<a id="btArtList" class="waves-effect waves-light btn">Projects</a>-->
                 <a id="btUpdate" class="waves-effect waves-light btn "
                    onclick="window.location.href='articleForm.html'">Edit</a>
@@ -52,8 +52,8 @@
     </div>
 </main>
 
-<!-- --------- CommentSection --------- -->
-<div id="log-out-invisible-comments" class="container ">
+<!-- -------- CommentSection -------- -->
+<div id="log-out-invisible-comments-article" class="container ">
     <hr>
     <div class="row">
         <h5 class="section-name">Add comment<span class="red-text">.</span></h5>
@@ -117,6 +117,8 @@
     };
     firebase.initializeApp(config);
 </script>
+<script src="js/firebase/firebase.js"></script>
+
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
@@ -128,7 +130,6 @@
 <script src="js/common/messages.js"></script>
 <script src="js/article.js"></script>
 <script src="js/commentForm.js"></script>
-<script src="js/firebase/firebase.js"></script>
 <script src="js/commentsList.js"></script>
 
 

@@ -40,7 +40,27 @@ function writeArticles2HtmlSearch(startIndex, max, server, articlesElmId, search
                 });
             });
         } else {
-            //window.location.href = "login.html";
+            var userURL = window.location.href;
+            var reg = /[^?]*$/g;
+            var matches = userURL.match(reg);
+            console.log("This is url matched: " + matches[0]);
+
+            $.ajax({
+                type: 'GET',
+                url: "http://"+server+"/api/article?author="+matches[0]+"&title="+search,
+                data: { max: max, offset: startIndex },
+                dataType: "json",
+                success: function (articles) {
+                    $.get("templates/listOfArticles.mst",
+                        function (template) {
+                            $("#"+articlesElmId).html(Mustache.render(template, articles));
+                        }
+                        ,"text");
+                },
+                error:function(jxhr){
+                    errorAlert("Loading of articles failed.",jxhr);
+                }
+            });
         }
     });
 }
