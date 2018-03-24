@@ -13,7 +13,7 @@
             <ul class="right hide-on-med-and-down" >
                 <li><a onclick="openPage('index.html')" ><span class="black-text text-lighten-2">About</span></a></li>
                 <li><a onclick="openPage('projects.html')"><span class="black-text text-lighten-2">Projects</span></a></li>
-                <li><a onclick="logOutOrIn()"><span id="log-nav" class="black-text text-lighten-2"></span></a></li>
+                <li><a onclick="logOutOrIn()"><span id="log-nav" class="black-text text-lighten-2">Log</span></a></li>
             </ul>
         </div>
     </nav>
@@ -22,22 +22,11 @@
     <ul class="side-nav" id="mobile-demo">
         <li><a onclick="openPage('index.html')" ><span class="black-text text-lighten-2">About</span></a></li>
         <li><a onclick="openPage('projects.html')"><span class="black-text text-lighten-2">Projects</span></a></li>
-        <li><a onclick="logOutOrIn()"><span id="log-side-nav" class="black-text text-lighten-2"></span></a></li>
+        <li><a onclick="logOutOrIn()"><span id="log-side-nav" class="black-text text-lighten-2">Log</span></a></li>
     </ul>
 </div>
 
 
 <script src="js/navigation_scripts.js"></script>
 <script src="js/libs/materialize.js"></script>
-<script >
-    firebase.auth().onAuthStateChanged(function (user) {
-        if (user) {
-            document.getElementById("log-nav").textContent = "LogOut";
-            document.getElementById("log-side-nav").textContent = "LogOut";
-        } else {
-            document.getElementById("log-nav").textContent = "LogIn";
-            document.getElementById("log-side-nav").textContent = "LogIn";
-        }
-    });
 
-</script>
