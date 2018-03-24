@@ -27,7 +27,7 @@ function setUserData() {
     console.log("set user data");
 
     refUser.set(userData).then(function onSuccess(res) {
-        window.location.href = "index.html";
+        window.location.href = "set_about.html";
     }).catch(function onError(err) {
         Materialize.toast("Data wasnt set.", 4000);
     });

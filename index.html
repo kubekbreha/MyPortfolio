@@ -52,12 +52,14 @@
     <div class="container">
         <div class="row">
             <div class="col 18 s12 white-text ">
-                <h1 class="article_name_font"><span class="black-text text-lighten-2">Hi<span class="red-text">.</span> I'm Jakub Brehuv<span
+                <h1 class="article_name_font"><span class="black-text text-lighten-2">Hi<span class="red-text">.
+                </span> I'm <i id="index_user_name"></i><span
                         class="red-text">.</span>
                 <br> Welcome to my Page<span class="red-text">.</span></span></h1>
             </div>
             <div class="col 14">
-                <a class="waves-effect btn-large hoverable black accent-2" onclick="openPage('projects.html')">See my projects</a>
+                <a class="waves-effect btn-large hoverable black accent-2" onclick="openPage('projects.html')">See my
+                    projects</a>
             </div>
         </div>
     </div>
@@ -70,11 +72,9 @@
         <h2 class="section-name">About me<span class="red-text">.</span></h2>
     </div>
     <div class="row">
-        <p class="flow-text">
-            I'm student who have passion for IT. I'm trying to improve my programming skills every day an I'm grateful
-            for every opportunity to learn new things.
-            This is simple self propagation page where you can see some of my projects on which I have worked or on
-            which I'm currently working.
+        <p
+                id="index_about_text" class="flow-text">
+
         </p>
     </div>
 </div>
@@ -88,7 +88,6 @@
     <div class="row">
         <p class="flow-text">
             If you wondering how you can support my or my work the best way is to share my work to others.
-            You can share this page on facebook right now.
             You can also donate to my <a href="https://www.patreon.com/kubekbreha">patreon.</a>
         </p>
 
@@ -101,7 +100,8 @@
                     class="fa fa-linkedin"></i></a>
             <a id="share-gp" target="_blank" class="sharer button btn-social btn-google-plus"><i
                     class="fa fa-google"></i></a>
-            <a id="share-em" target="_blank" class="sharer button btn-social btn-email"><i class="fa fa-envelope"></i></a>
+            <a id="share-em" target="_blank" class="sharer button btn-social btn-email"><i
+                    class="fa fa-envelope"></i></a>
         </div>
     </div>
 </div>
@@ -137,6 +137,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
 <script src="js/firebase/firebase.js"></script>
+<script src="js/firebase/firebase_index.js"></script>
 <script src="https://cdn.jsdelivr.net/sharer.js/latest/sharer.min.js"></script>
 <script src="js/social_share.js"></script>
 

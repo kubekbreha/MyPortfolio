@@ -12,7 +12,5 @@ $(document).ready(function () {
             document.getElementById("log-side-nav").textContent = "LogIn";
         }
     });
-
-
 });
 
