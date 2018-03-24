@@ -44,5 +44,14 @@ firebase.auth().onAuthStateChanged(function (user) {
 
 
     }else{
+        var userURL = window.location.href;
+        var reg = /[^?]*$/g;
+        var matches = userURL.match(reg);
+        console.log("This is url matched: " + matches[0]);
+
+        var newName = matches[0].replace(/%20/g , " ");
+        document.getElementById("index_user_name").textContent = newName;
+        document.getElementById("index_about_me_section").style.display = "none";
+
     }
 });
