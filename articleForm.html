@@ -44,46 +44,49 @@
         <div class="container">
 
             <br>
-            <label for="title">Názov:</label>
+            <label for="title">Title:</label>
             <input type="text" name="title" id="title" size="50" maxlength="100" pattern="\S[\S\s]*" required
-                   title="Názov článku. Povinná položka. Maximálna dĺžka: 100 znakov. Prvý znak nesmie byť medzera."
-                   placeholder="napr. Môj prvý príbeh"/>
+                   title="Article name. You need to fill this. "
+                   placeholder="exmpl. My first project"/>
             <!--
             \s =  match any white space character
             \S =  match any non-white space character
             -->
             <br>
-            <label for="imageLink">Obrázok (url):</label>
+            <label for="imageLink">Picture (url):</label>
             <input type="url" name="imageLink" id="imageLink" size="50"
-                   title="Názov článku. Maximálna dĺžka: 100 znakov." maxlength="100"/>
+                   title="Article name" maxlength="100"/>
             <br>
             <label></label>
-            <button type="button" id="btShowFileUpload">Nahraj obrázok</button>
+            <button type="button" id="btShowFileUpload">Load picture</button>
 
             <fieldset class="added skryty" id="fsetFileUpload">
-                <legend>Nahranie obrázka</legend>
+                <legend>Uploading of a picture</legend>
                 <input type="file" id="flElm" name="file" accept="image/jpeg, image/png"/>
-                <button type="button" id="btFileUpload">Odošli obrázok na server</button>
-                <button type="button" id="btCancelFileUpload">Zruš nahrávanie</button>
+                <button type="button" id="btFileUpload">Send picture to server</button>
+                <button type="button" id="btCancelFileUpload">Stop uploading</button>
             </fieldset>
 
 
             <br>
-            <label for="content">Text článku:</label>
+            <label for="content">Article text:</label>
             <textarea name="content" id="content" spellcheck="true" lang="sk" cols="50" rows="20" required
-                      title="Obsah článku. Povinná položka.  Môže byť obyčajný text alebo html."></textarea>
+                      title="Context of article."></textarea>
             <br>
-            <label for="tags">Kľúčové slová:</label>
-            <input type="text" name="tags" id="tags" size="50" title="Zoznam kľúčových slov oddelených čiarkou."
-                   placeholder="napr. dedina, dráma"/>
+            <label for="tags">Keywords:</label>
+            <input type="text" name="tags" id="tags" size="50" title="List of keywords"
+                   placeholder="exmpl. computer, work.."/>
 
             <br>
             <br>
 
 
-            <button type="button" id="btBack">Back</button>
-            <button type="reset">Reset</button>
-            <button type="submit">Submit</button>
+
+            <div class="center" >
+                <button class="button_black edit_margin" type="button" id="btBack">Back</button>
+                <button class="button_red edit_margin" type="reset">Reset</button>
+                <button class="button_green edit_margin" type="submit">Submit</button>
+            </div>
 
 
             <!-- this is invisible for user -->
