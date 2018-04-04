@@ -6,11 +6,9 @@ $(document).ready(function () {
         if (user) {
             logged = true;
             document.getElementById("log-out-invisible-add-project").style.display = "block";
-            Materialize.toast("Logged", 4000);
         } else {
             logged = false;
             document.getElementById("log-out-invisible-add-project").style.display = "none";
-            Materialize.toast("NotLogged", 4000);
 
         }
     });
