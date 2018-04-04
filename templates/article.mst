@@ -24,6 +24,9 @@
                             <li>
                                 <p id="user-name-template">{{author}}</p>
                             </li>
+                            <li>
+                                <div class="chip">Tags: {{tags}}</div>
+                            </li>
                         </ul>
                     </div>
                 </div>

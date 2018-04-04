@@ -73,16 +73,30 @@
             <textarea name="content" id="content" spellcheck="true" lang="sk" cols="50" rows="20" required
                       title="Context of article."></textarea>
             <br>
-            <label for="tags">Keywords:</label>
-            <input type="text" name="tags" id="tags" size="50" title="List of keywords"
-                   placeholder="exmpl. computer, work.."/>
+
+
+            <label for="tags">Kľúčové slová:</label>
+            <input type="text" id="tags" name="tags" list="HardwarePC"
+                   title="V každom slove začiatočné písmeno veľké, ostatné malé a slová oddelené čiarkou. Slová dlhé maximálne 10 písmen a maximálne 5 slov."
+                   spellcheck="false" pattern="([A-Za-z]{2,20})(,[A-Za-z]{2,20}){0,15}">
+
+
+            <datalist id="HardwarePC">
+                <option value="Java">Java</option>
+                <option value="C#">C#</option>
+                <option value="C">C</option>
+                <option value="Android">Android</option>
+                <option value="Experience">Experience</option>
+                <option value="Travel">Travel</option>
+                <option value="Code">Code</option>
+                <option value="Solutions">Solutions</option>
+                <option value="Design">Design</option>
+            </datalist>
 
             <br>
             <br>
 
-
-
-            <div class="center" >
+            <div class="center">
                 <button class="button_black edit_margin" type="button" id="btBack">Back</button>
                 <button class="button_red edit_margin" type="reset">Reset</button>
                 <button class="button_green edit_margin" type="submit">Submit</button>

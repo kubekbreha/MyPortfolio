@@ -144,7 +144,7 @@ function prepareAndSendArticle($frm, method, restURL) {
 
 
     //4. sending data
-    if(window.confirm("You realy want to sa this project")){
+    if(window.confirm("You really want to save this project")){
 
         $.ajax({
             type: method,
