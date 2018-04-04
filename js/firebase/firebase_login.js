@@ -25,6 +25,11 @@ function openRegister() {
     window.location.href = "register.html";
 }
 
+//open restore password page web
+function openForgotPassword() {
+    window.location.href = "forgot_password.html";
+}
+
 //google sign in
 function callGoogleSignIn(){
     var provider = new firebase.auth.GoogleAuthProvider();
@@ -71,3 +76,4 @@ function callFacebookSignIn() {
 
     });
 }
+
