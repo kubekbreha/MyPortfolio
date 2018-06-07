@@ -47,7 +47,7 @@ function callGoogleSignIn(){
         var email = error.email;
         // The firebase.auth.AuthCredential type that was used.
         var credential = error.credential;
-
+        //write error mesage to html element
         document.getElementById("error_message").innerHTML = errorMessage;
 
     });
@@ -76,4 +76,6 @@ function callFacebookSignIn() {
 
     });
 }
+
+
 
